@@ -8,8 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dto.FreeDTO;
-import oracle.jdbc.proxy.annotation.Pre;
-import util.DBCP;
 import util.MyDBConn;
 
 public class FreeDAO {

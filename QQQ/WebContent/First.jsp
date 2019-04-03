@@ -8,16 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-fd
-<%
-Object o=null;
-out.println(o instanceof List<?>);
-out.println("<br>");
-	out.println(application.getServerInfo());
-	out.println("<br>");
-	out.println(getServletName());
-	out.println(application.getServletContextName());
-%>
 
 
 <script>
