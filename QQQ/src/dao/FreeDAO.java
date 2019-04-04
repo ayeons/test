@@ -11,20 +11,25 @@ import dto.FreeDTO;
 import util.MyDBConn;
 
 public class FreeDAO {
-	public List<FreeDTO> freeList() {
+	public List<FreeDTO> freeList(int ref) {
 		Connection conn=null;
 		PreparedStatement pstmt=null;
 		ResultSet rs=null;
 		List<FreeDTO> list=new ArrayList<>();
 		try {
-			String sql="select * from free where ref=0";
-			conn=MyDBConn.getConn();
+			String sql="select * from free where reff=?";
+			conn=DBCP.getConn();
 			pstmt=conn.prepareStatement(sql);
+			pstmt.setInt(1, ref);
 			pstmt.execute();
 			rs=pstmt.getResultSet();
 			while(rs.next()) {
-				
-				FreeDTO dto=new FreeDTO(rs.getInt("idx"),rs.getInt("ref"),rs.getInt("seq"),rs.getString("author"),rs.getString("content"),rs.getBoolean("reply"));
+				boolean b=false;
+				int i=rs.getInt("reply");
+				if(i==1) {
+					b=true;
+				}
+				FreeDTO dto=new FreeDTO(rs.getInt("idx"),rs.getInt("reff"),rs.getInt("seq"),rs.getString("author"),rs.getString("content"),b);
 				
 				list.add(dto);
 			}

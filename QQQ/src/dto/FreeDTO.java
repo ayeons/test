@@ -2,7 +2,7 @@ package dto;
 
 public class FreeDTO {
 	private int idx;
-	private int ref;
+	private int reff;
 	private int seq;
 	private String author;
 	private String content;
@@ -17,44 +17,45 @@ public class FreeDTO {
 	
 	
 
-	public FreeDTO(int ref, int seq) {
+	public FreeDTO(int reff, String author, String content) {
 		super();
-		this.ref = ref;
-		this.seq = seq;
+		this.reff = reff;
+		this.author=author;
+		this.content=content;
 	}
 
 
 
 
-	public FreeDTO(int ref, int seq, String author, String content) {
+	public FreeDTO(int reff, int seq, String author, String content) {
 		super();
-		this.ref = ref;
-		this.seq = seq;
-		this.author = author;
-		this.content = content;
-	}
-
-
-
-	public FreeDTO(int idx, int ref, int seq, String author, String content) {
-		super();
-		this.idx = idx;
-		this.ref = ref;
+		this.reff = reff;
 		this.seq = seq;
 		this.author = author;
 		this.content = content;
 	}
-	
-	
-	
-	
 
 
 
-	public FreeDTO(int idx, int ref, int seq, String author, String content, boolean reply) {
+	public FreeDTO(int idx, int reff, int seq, String author, String content) {
 		super();
 		this.idx = idx;
-		this.ref = ref;
+		this.reff = reff;
+		this.seq = seq;
+		this.author = author;
+		this.content = content;
+	}
+	
+	
+	
+	
+
+
+
+	public FreeDTO(int idx, int reff, int seq, String author, String content, boolean reply) {
+		super();
+		this.idx = idx;
+		this.reff = reff;
 		this.seq = seq;
 		this.author = author;
 		this.content = content;
@@ -70,11 +71,11 @@ public class FreeDTO {
 	public void setIdx(int idx) {
 		this.idx = idx;
 	}
-	public int getRef() {
-		return ref;
+	public int getReff() {
+		return reff;
 	}
-	public void setRef(int ref) {
-		this.ref = ref;
+	public void setReff(int reff) {
+		this.reff = reff;
 	}
 	public int getSeq() {
 		return seq;
@@ -107,7 +108,7 @@ public class FreeDTO {
 
 	@Override
 	public String toString() {
-		return "FreeDTO [idx=" + idx + ", ref=" + ref + ", seq=" + seq + ", author=" + author + ", content=" + content
+		return "FreeDTO [idx=" + idx + ", reff=" + reff + ", seq=" + seq + ", author=" + author + ", content=" + content
 				+ "]";
 	}
 }	
