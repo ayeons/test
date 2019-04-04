@@ -17,10 +17,11 @@ public class FreeDTO {
 	
 	
 
-	public FreeDTO(int ref, int seq) {
+	public FreeDTO(int ref, String author, String content) {
 		super();
 		this.ref = ref;
-		this.seq = seq;
+		this.author=author;
+		this.content=content;
 	}
 
 
