@@ -30,7 +30,7 @@
 				
 				
 				
-				$(tag).html("ad");
+				$(tag).html(b);
 				
 				$(t).parent().next().append(tag);
 				
