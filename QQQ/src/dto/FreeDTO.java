@@ -2,11 +2,12 @@ package dto;
 
 public class FreeDTO {
 	private int idx;
-	private int reff;
+	private int refg;
 	private int seq;
+	private int lev;
 	private String author;
 	private String content;
-	private boolean reply;
+	
 	
 	
 	
@@ -17,49 +18,27 @@ public class FreeDTO {
 	
 	
 
-	public FreeDTO(int reff, String author, String content) {
+	public FreeDTO(int refg, String author, String content) {
 		super();
-		this.reff = reff;
+		this.refg = refg;
 		this.author=author;
 		this.content=content;
 	}
 
+	
+	
+	
 
 
 
-	public FreeDTO(int reff, int seq, String author, String content) {
-		super();
-		this.reff = reff;
-		this.seq = seq;
-		this.author = author;
-		this.content = content;
-	}
-
-
-
-	public FreeDTO(int idx, int reff, int seq, String author, String content) {
+	public FreeDTO(int idx, int refg, int seq, int lev, String author, String content) {
 		super();
 		this.idx = idx;
-		this.reff = reff;
+		this.refg = refg;
 		this.seq = seq;
+		this.lev = lev;
 		this.author = author;
 		this.content = content;
-	}
-	
-	
-	
-	
-
-
-
-	public FreeDTO(int idx, int reff, int seq, String author, String content, boolean reply) {
-		super();
-		this.idx = idx;
-		this.reff = reff;
-		this.seq = seq;
-		this.author = author;
-		this.content = content;
-		this.reply = reply;
 	}
 
 
@@ -71,17 +50,23 @@ public class FreeDTO {
 	public void setIdx(int idx) {
 		this.idx = idx;
 	}
-	public int getReff() {
-		return reff;
+	public int getRefg() {
+		return refg;
 	}
-	public void setReff(int reff) {
-		this.reff = reff;
+	public void setRefg(int refg) {
+		this.refg = refg;
 	}
 	public int getSeq() {
 		return seq;
 	}
 	public void setSeq(int seq) {
 		this.seq = seq;
+	}
+	public int getLev() {
+		return lev;
+	}
+	public void setLev(int lev) {
+		this.lev = lev;
 	}
 	public String getAuthor() {
 		return author;
@@ -96,19 +81,14 @@ public class FreeDTO {
 		this.content = content;
 	}
 	
-	public boolean isReply() {
-		return reply;
-	}
-	public void setReply(boolean reply) {
-		this.reply = reply;
-	}
+	
 	
 
 
 
 	@Override
 	public String toString() {
-		return "FreeDTO [idx=" + idx + ", reff=" + reff + ", seq=" + seq + ", author=" + author + ", content=" + content
+		return "FreeDTO [idx=" + idx + ", refg=" + refg + ", seq=" + seq + ", author=" + author + ", content=" + content
 				+ "]";
 	}
 }	
