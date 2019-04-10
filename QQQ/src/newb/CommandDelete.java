@@ -15,5 +15,5 @@ public class CommandDelete implements Command {
 		req.setAttribute("command", "list.co");
 		req.setAttribute("send", "dd");
 	}
-
+	
 }
