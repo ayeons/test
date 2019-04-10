@@ -17,9 +17,10 @@
 
 
 
-<form action="/QQQ/Test" method="post">
+<form action="/QQQ/NewFile1.jsp" method="post" enctype="multipart/form-data">
 	<input type="text" name="id">
 	<input type="submit">
+	<input type="file" name="file">
 </form>
 
 </body>
