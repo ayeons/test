@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<%@include file="header.jsp" %>
+<%@include file="../header.jsp" %>
 <script>
 
 	function d(t){
@@ -45,7 +45,7 @@
 					
 					for(var i=0;i<lev;i++){
 						
-						$(tagTr).append("<td onclick='d(this)' style='color:blue'>re</td>");
+						$(tagTr).append("<td onclick='d(this)' style='color:blue'>&nbsp;&nbsp;&nbsp;re</td>");
 						
 					}
 					$(tagTr).append("<td style='display:none'>"+$(this).find("refg").text()+"</td>");
@@ -91,6 +91,6 @@
 		
 	</c:forEach>
 	</ul>
-	<input type=button onclick="d(this)" value="fd">
+	
 </body>
 </html>

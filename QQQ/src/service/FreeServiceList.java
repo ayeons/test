@@ -30,7 +30,7 @@ public class FreeServiceList implements FreeServiceable{
 		
 			  req.setAttribute("list",list);
 			  req.setAttribute("pageQuantity", Quantity);
-			  RequestDispatcher rd=req.getRequestDispatcher("/freeBoard.jsp");
+			  RequestDispatcher rd=req.getRequestDispatcher("/freeJ/freeBoard.jsp");
 				try {
 					rd.forward(req, resp);
 				} catch (ServletException e) {

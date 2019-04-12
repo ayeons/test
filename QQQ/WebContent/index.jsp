@@ -23,15 +23,15 @@
         </div>
         <ul class="hero-info d-none d-lg-block">
           <li>
-            <img src="img/banner/fas-service-icon.png" alt="">
+            <img src="resource/img/banner/fas-service-icon.png" alt="">
             <h4>Fast Service</h4>
           </li>
           <li>
-            <img src="img/banner/fresh-food-icon.png" alt="">
+            <img src="resource/img/banner/fresh-food-icon.png" alt="">
             <h4>Fresh Food</h4>
           </li>
           <li>
-            <img src="img/banner/support-icon.png" alt="">
+            <img src="resource/img/banner/support-icon.png" alt="">
             <h4>24/7 Support</h4>
           </li>
         </ul>
@@ -39,16 +39,16 @@
       <div class="hero-right">
         <div class="owl-carousel owl-theme hero-carousel">
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="img/banner/hero-banner1.png" alt="">
+            <img class="img-fluid" src="resource/img/banner/hero-banner1.png" alt="">
           </div>
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="img/banner/hero-banner2.png" alt="">
+            <img class="img-fluid" src="resource/img/banner/hero-banner2.png" alt="">
           </div>
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="img/banner/hero-banner1.png" alt="">
+            <img class="img-fluid" src="resource/img/banner/hero-banner1.png" alt="">
           </div>
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="img/banner/hero-banner2.png" alt="">
+            <img class="img-fluid" src="resource/img/banner/hero-banner2.png" alt="">
           </div>
         </div>
       </div>
@@ -69,9 +69,9 @@
         <div class="col-md-6 col-xl-6 mb-5 mb-md-0 pb-5 pb-md-0">
           <div class="img-styleBox">
             <div class="styleBox-border">
-              <img class="styleBox-img1 img-fluid" src="img/home/about-img1.png" alt="">
+              <img class="styleBox-img1 img-fluid" src="resource/img/home/about-img1.png" alt="">
             </div>
-            <img class="styleBox-img2 img-fluid" src="img/home/about-img2.png" alt="">
+            <img class="styleBox-img2 img-fluid" src="resource/img/home/about-img2.png" alt="">
           </div>
         </div>
         <div class="col-md-6 pl-md-5 pl-xl-0 offset-xl-1 col-xl-5">
@@ -99,7 +99,7 @@
 
       <div class="owl-carousel owl-theme featured-carousel">
         <div class="featured-item">
-          <img class="card-img rounded-0" src="img/home/featured1.png" alt="">
+          <img class="card-img rounded-0" src="resource/img/home/featured1.png" alt="">
           <div class="item-body">
             <a href="#">
               <h3>Mountain Mike Pizza</h3>
@@ -118,7 +118,7 @@
           </div>
         </div>
         <div class="featured-item">
-          <img class="card-img rounded-0" src="img/home/featured2.png" alt="">
+          <img class="card-img rounded-0" src="resource/img/home/featured2.png" alt="">
           <div class="item-body">
             <a href="#">
               <h3>Patatas Bravas</h3>
@@ -137,7 +137,7 @@
           </div>
         </div>
         <div class="featured-item">
-          <img class="card-img rounded-0" src="img/home/featured3.png" alt="">
+          <img class="card-img rounded-0" src="resource/img/home/featured3.png" alt="">
           <div class="item-body">
             <a href="#">
               <h3>Pulled Sandwich</h3>
@@ -156,7 +156,7 @@
           </div>
         </div>
         <div class="featured-item">
-          <img class="card-img rounded-0" src="img/home/featured1.png" alt="">
+          <img class="card-img rounded-0" src="resource/img/home/featured1.png" alt="">
           <div class="item-body">
             <a href="#">
               <h3>Mountain Mike Pizza</h3>
@@ -184,7 +184,7 @@
     <div class="container">
       <div class="row no-gutters">
         <div class="col-sm">
-          <img class="card-img rounded-0" src="img/home/offer-img.png" alt="">
+          <img class="card-img rounded-0" src="resource/img/home/offer-img.png" alt="">
         </div>
         <div class="col-sm">
           <div class="offer-card offer-card-position">
@@ -209,7 +209,7 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="media align-items-center food-card">
-            <img class="mr-3 mr-sm-4" src="img/home/food1.png" alt="">
+            <img class="mr-3 mr-sm-4" src="resource/img/home/food1.png" alt="">
             <div class="media-body">
               <div class="d-flex justify-content-between food-card-title">
                 <h4>Roasted Marrow</h4>
@@ -222,7 +222,7 @@
 
         <div class="col-lg-6">
           <div class="media align-items-center food-card">
-            <img class="mr-3 mr-sm-4" src="img/home/food1.png" alt="">
+            <img class="mr-3 mr-sm-4" src="resource/img/home/food1.png" alt="">
             <div class="media-body">
               <div class="d-flex justify-content-between food-card-title">
                 <h4>Roasted Marrow</h4>
@@ -235,7 +235,7 @@
 
         <div class="col-lg-6">
           <div class="media align-items-center food-card">
-            <img class="mr-3 mr-sm-4" src="img/home/food1.png" alt="">
+            <img class="mr-3 mr-sm-4" src="resource/img/home/food1.png" alt="">
             <div class="media-body">
               <div class="d-flex justify-content-between food-card-title">
                 <h4>Roasted Marrow</h4>
@@ -248,7 +248,7 @@
 
         <div class="col-lg-6">
           <div class="media align-items-center food-card">
-            <img class="mr-3 mr-sm-4" src="img/home/food1.png" alt="">
+            <img class="mr-3 mr-sm-4" src="resource/img/home/food1.png" alt="">
             <div class="media-body">
               <div class="d-flex justify-content-between food-card-title">
                 <h4>Roasted Marrow</h4>
@@ -261,7 +261,7 @@
 
         <div class="col-lg-6">
           <div class="media align-items-center food-card">
-            <img class="mr-3 mr-sm-4" src="img/home/food1.png" alt="">
+            <img class="mr-3 mr-sm-4" src="resource/img/home/food1.png" alt="">
             <div class="media-body">
               <div class="d-flex justify-content-between food-card-title">
                 <h4>Roasted Marrow</h4>
@@ -274,7 +274,7 @@
 
         <div class="col-lg-6">
           <div class="media align-items-center food-card">
-            <img class="mr-3 mr-sm-4" src="img/home/food1.png" alt="">
+            <img class="mr-3 mr-sm-4" src="resource/img/home/food1.png" alt="">
             <div class="media-body">
               <div class="d-flex justify-content-between food-card-title">
                 <h4>Roasted Marrow</h4>
@@ -287,7 +287,7 @@
 
         <div class="col-lg-6">
           <div class="media align-items-center food-card">
-            <img class="mr-3 mr-sm-4" src="img/home/food1.png" alt="">
+            <img class="mr-3 mr-sm-4" src="resource/img/home/food1.png" alt="">
             <div class="media-body">
               <div class="d-flex justify-content-between food-card-title">
                 <h4>Roasted Marrow</h4>
@@ -300,7 +300,7 @@
 
         <div class="col-lg-6">
           <div class="media align-items-center food-card">
-            <img class="mr-3 mr-sm-4" src="img/home/food1.png" alt="">
+            <img class="mr-3 mr-sm-4" src="resource/img/home/food1.png" alt="">
             <div class="media-body">
               <div class="d-flex justify-content-between food-card-title">
                 <h4>Roasted Marrow</h4>
@@ -337,7 +337,7 @@
       <div class="row">
         <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
           <div class="chef-card">
-            <img class="card-img rounded-0" src="img/home/chef-1.png" alt="">
+            <img class="card-img rounded-0" src="resource/img/home/chef-1.png" alt="">
             <div class="chef-footer">
               <h4>Daniesl Laran</h4>
               <p>Executive Chef</p>
@@ -356,7 +356,7 @@
 
         <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
           <div class="chef-card">
-            <img class="card-img rounded-0" src="img/home/chef-2.png" alt="">
+            <img class="card-img rounded-0" src="resource/img/home/chef-2.png" alt="">
             <div class="chef-footer">
               <h4>Daniesl Laran</h4>
               <p>Executive Chef</p>
@@ -375,7 +375,7 @@
 
         <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
           <div class="chef-card">
-            <img class="card-img rounded-0" src="img/home/chef-3.png" alt="">
+            <img class="card-img rounded-0" src="resource/img/home/chef-3.png" alt="">
             <div class="chef-footer">
               <h4>Daniesl Laran</h4>
               <p>Executive Chef</p>
@@ -476,7 +476,7 @@
       <div class="row">
         <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
           <div class="card-blog">
-            <img class="card-img rounded-0" src="img/blog/blog1.png" alt="">
+            <img class="card-img rounded-0" src="resource/img/blog/blog1.png" alt="">
             <div class="blog-body">
               <ul class="blog-info">
                 <li><a href="#">Admin post</a></li>
@@ -491,7 +491,7 @@
 
         <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
           <div class="card-blog">
-            <img class="card-img rounded-0" src="img/blog/blog2.png" alt="">
+            <img class="card-img rounded-0" src="resource/img/blog/blog2.png" alt="">
             <div class="blog-body">
               <ul class="blog-info">
                 <li><a href="#">Admin post</a></li>
@@ -507,7 +507,7 @@
 
         <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
           <div class="card-blog">
-            <img class="card-img rounded-0" src="img/blog/blog3.png" alt="">
+            <img class="card-img rounded-0" src="resource/img/blog/blog3.png" alt="">
             <div class="blog-body">
               <ul class="blog-info">
                 <li><a href="#">Admin post</a></li>

@@ -21,15 +21,15 @@
         <p>From  set together our divided own saw divided the form god <br class="d-none d-xl-block"> seas moveth you will fifth under replenish end</p>
         <ul class="hero-info d-none d-lg-block">
           <li>
-            <img src="/QQQ/img/banner/fas-service-icon.png" alt="">
+            <img src="/QQQ/resource/img/banner/fas-service-icon.png" alt="">
             <h4>Fast Service</h4>
           </li>
           <li>
-            <img src="/QQQ/img/banner/fresh-food-icon.png" alt="">
+            <img src="/QQQ/resource/img/banner/fresh-food-icon.png" alt="">
             <h4>Fresh Food</h4>
           </li>
           <li>
-            <img src="/QQQ/img/banner/support-icon.png" alt="">
+            <img src="/QQQ/resource/img/banner/support-icon.png" alt="">
             <h4>24/7 Support</h4>
           </li>
         </ul>
@@ -42,7 +42,7 @@
       <div class="hero-right">
         <div class="owl-carousel owl-theme w-100 hero-carousel">
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="/QQQ/img/home/about-img1.png" alt="">
+            <img class="img-fluid" src="/QQQ/resource/img/home/about-img1.png" alt="">
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@
 	       	 </div>
 	       	 <div class="col-lg-6">
 	          <div class="media align-items-center food-card">
-	            <img class="mr-3 mr-sm-4" src="img/home/food1.png" alt="">
+	            <img class="mr-3 mr-sm-4" src="resource/img/home/food1.png" alt="">
 	            <div class="media-body">
 	              <div class="d-flex justify-content-between food-card-title">
 	                <h4>x${dto.getQuantity() }</h4>
