@@ -26,10 +26,10 @@ public class userDAO {
 			pstmt.setString(1, userID);
 			rs = pstmt.executeQuery();
 			if(rs.next() || userID.equals("")) {
-				return 0; // 이미 존재하는 회원
+				return 0; 
 			}
 			else {
-				return 1; // 가입 가능한 회원 아이디
+				return 1; 
 			}
 			
 		} catch (Exception e) {
@@ -43,7 +43,7 @@ public class userDAO {
 				e2.printStackTrace();
 			}
 		}
-		return -1; //데이터베이스 오류
+		return -1; 
 	}
 	public int register(String usersID, String userPassword, String userName, String userAge, String userGender, String userEmail) {
 			Connection conn=null;
@@ -72,7 +72,7 @@ public class userDAO {
 					e2.printStackTrace();
 				}
 			}
-			return -1; //데이터베이스 오류
+			return -1; 
 	}
 	
 	public int update(userDTO dto) {
@@ -98,14 +98,12 @@ public class userDAO {
 				try {
 					conn.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			if(pstmt!=null)
 				try {
 					pstmt.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 		}
@@ -140,28 +138,46 @@ public class userDAO {
 				try {
 					rs.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			if(pstmt!=null)
 				try {
 					pstmt.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			if(conn!=null)
 				try {
 					conn.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 		}
 		return null;
 		
 	}
+	public userDTO serch(String id) {
+		String sql="select * from user where userid=?";
+		ResultSet rs=null;
+		userDTO dto=null;
+		try(Connection conn=MyDBConn.getConn(); PreparedStatement pstmt=conn.prepareStatement(sql)){
+			pstmt.setString(1, id);
+			rs=pstmt.executeQuery();
+			if(rs.next()) {
+				String idx=rs.getString("userid");
+				
+				String name=rs.getString("username");
+				int age=rs.getInt("userage");
+				String gender=rs.getString("usergender");
+				String email=rs.getString("useremail");
+				dto=new  userDTO(idx,null,name,age,gender,email);
+			}
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return dto;
 		
+	}
 }
 
 	

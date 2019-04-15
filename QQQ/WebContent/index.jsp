@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
 <%@include file="header.jsp" %>
 
 <span class=""><a class="nav-link" href="<%=getServletContext().getContextPath()%>/management/list">°ü¸®ÀÚ</a></span>

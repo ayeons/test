@@ -21,7 +21,7 @@
 	function df(){
 	
 		var s=location.href;
-		location.href="/QQQ/loginC.jsp?uri="+s;
+		location.href="/QQQ/test/loginC.jsp?uri="+s;
 	}
 </script>
 
@@ -38,7 +38,7 @@
 
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav justify-content-end">
-              <li class="nav-item"><a class="nav-link" href="javascript:df()">log</a>
+              <li class="nav-item"><a class="nav-link" href="javascript:df()"></a>
               <li class="nav-item"><a class="nav-link" href="/QQQ/index.jsp">Home</a></li> 
               <li class="nav-item"><a class="nav-link" href="#"></a></li> 
               <li class="nav-item"><a class="nav-link" href="/QQQ/product/list">Menu</a>

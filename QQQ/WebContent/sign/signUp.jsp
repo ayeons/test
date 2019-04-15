@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/QQQ/resource/css/bootstrap.css">
+
 <link rel="stylesheet" href="/QQQ/resource/css/custom.css">
 <title>회원가입</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -44,7 +44,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<%@include file="../header.jsp" %>
 	<div class="container">
 		<form method="post" action="/QQQ/userRegister">
 			<table class="table table-bordered table-hover" style="text-align: center; border: 1px solid #dddddd">

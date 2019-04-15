@@ -8,7 +8,7 @@
 		$("#log").css("display","none");
 	})
 </script>
-<a href="" class="button" >${sessionScope.memDTO.getUserName()}</a>´Ô È¯¿µÇØ¿ä
+<a href="/QQQ/user/update" class="button" >${sessionScope.memDTO.getUserName()}</a>´Ô È¯¿µÇØ¿ä
 <a href="/QQQ/user/logout" >·Î±×¾Æ¿ô</a>
 </c:if>
 </div>

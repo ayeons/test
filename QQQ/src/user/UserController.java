@@ -11,13 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- * Servlet implementation class UserController
- */
 @WebServlet("/user/*")
 public class UserController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	Map<String,UserInter> map=new HashMap<>();
+	
 	
     public UserController() {
     	
@@ -29,6 +26,12 @@ public class UserController extends HttpServlet {
 		 if(requestPath.equals("/user/updateOK")) {
 			 new userDAO().update(makeDTO(request,response));
 			 response.sendRedirect("/QQQ/index.jsp");
+			 return;
+		 }
+		 if(requestPath.equals("/user/update")) {
+			 userDTO dto=new userDAO().serch(request.getParameter("userId"));
+			 request.setAttribute("dto", dto);
+			 request.getRequestDispatcher("/QQQ/sign/update.jsp");
 			 return;
 		 }
 		 if(requestPath.equals("/user/login")) {
@@ -61,7 +64,7 @@ public class UserController extends HttpServlet {
 				 
 				 response.sendRedirect("/QQQ/index.jsp");
 			 }else {
-				 request.setAttribute("loginMessage", "틀렸다");
+				 request.setAttribute("loginMessage", "로그인성공");
 				 
 				 request.getRequestDispatcher("/user/login").forward(request, response);;
 			 }

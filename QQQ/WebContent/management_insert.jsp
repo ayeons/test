@@ -17,7 +17,7 @@
 
 	<h3>상품등록</h3>
 	<div class="col-lg-8">
-          <form class="form-contact contact_form" action="/QQQ/management/insert" method="post" id="contactForm" novalidate="novalidate">
+          <form class="form-contact contact_form" action="/QQQ/management/insert" method="post" id="contactForm" novalidate="novalidate" >
             <div class="row">
               <div class="col-6">
                 <div class="form-group">

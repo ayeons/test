@@ -10,11 +10,10 @@ public class DBConn {
 	public static Connection getConn() {
 		if(conn==null) {
 			try {
-				System.out.println("driverload");
 				Class.forName("oracle.jdbc.driver.OracleDriver");
+				System.out.println("driverload");
 				conn=DriverManager.getConnection("jdbc:oracle:thin:@192.168.10.50:1521:orcl","test","test");
 			} catch (ClassNotFoundException | SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
