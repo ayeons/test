@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dto.FreeDTO;
-import util.MyDBConn;
+import util.DBCP;
 
 public class FreeDAO {
 	public List<FreeDTO> freeList(int ref) {
