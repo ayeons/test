@@ -54,6 +54,9 @@
 							</li>
               <li class="nav-item"><a class="nav-link" href="contact.html"></a></li>
               <li class="nav-item active"> <a class="nav-link" href="/QQQ/product/showCart">장바구니</a></li>	
+              <li class="nav-item active"> <a class="nav-link" href="/QQQ/user/login" id="log">로그인</a></li>
+              <li class="nav-item active"> <a class="nav-link" href="/QQQ/user/sign">회원가입</a></li>
+              <%@include file="memsession.jsp" %>	
             </ul>
           </div> 
         </div>

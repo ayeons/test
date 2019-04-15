@@ -5,11 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="resource/css/bootstrap.css">
-<link rel="stylesheet" href="resource/css/custom.css">
+<link rel="stylesheet" href="/QQQ/resource/css/bootstrap.css">
+<link rel="stylesheet" href="/QQQ/resource/css/custom.css">
 <title>회원가입</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="resource/js/bootstrap.js"></script>
+<script src="/QQQ/resource/js/bootstrap.js"></script>
 <script type="text/javascript">
 	function registerCheckFunction() {
 		var userID = $('#userID').val();

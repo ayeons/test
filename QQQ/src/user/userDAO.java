@@ -4,7 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
+import util.DBCP;
 import util.MyDBConn;
 
 
@@ -71,9 +73,96 @@ public class userDAO {
 				}
 			}
 			return -1; //데이터베이스 오류
+	}
+	
+	public int update(userDTO dto) {
+		Connection conn=null;
+		PreparedStatement pstmt=null;
+		try {
+			String sql="update user set userpassword=?,username=?,userage=?,usergender=?,useremail=? where userid=?";
+			
+			conn=MyDBConn.getConn();
+			pstmt=conn.prepareStatement(sql);
+			pstmt.setString(1, dto.getUserPassword());
+			pstmt.setString(2, dto.getUserName());
+			pstmt.setInt(3, dto.getUserAge());
+			pstmt.setString(4, dto.getUserGender());
+			pstmt.setString(5, dto.getUserEmail());
+			pstmt.setString(6, dto.getUserID());
+			
+			
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}finally {
+			if(conn!=null)
+				try {
+					conn.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			if(pstmt!=null)
+				try {
+					pstmt.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 		}
 		
+		return 0;
+		
 	}
+	public userDTO check(String id,String password) {
+		Connection conn=null;
+		PreparedStatement pstmt=null;
+		ResultSet rs=null;
+		try {
+			String sql="select * from user where userid=? and userpassword=?";
+			conn=MyDBConn.getConn();
+			pstmt=conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			pstmt.setString(2, password);
+			rs=pstmt.executeQuery();
+			if(rs.next()) {
+				String uid=rs.getString("userid");
+				String pass=rs.getString("userpassword");
+				String name=rs.getString("username");
+				int age=rs.getInt("userage");
+				String gen=rs.getString("usergender");
+				String email=rs.getString("userEmail");
+				return new userDTO(uid,pass,name,age,gen,email);
+			}
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}finally {
+			if(rs!=null)
+				try {
+					rs.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			if(pstmt!=null)
+				try {
+					pstmt.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			if(conn!=null)
+				try {
+					conn.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		}
+		return null;
+		
+	}
+		
+}
 
 	
 

@@ -9,6 +9,20 @@ public class userDTO {
 	String userGender;
 	String userEmail;
 	
+	
+	public userDTO() {
+		super();
+	}
+	public userDTO(String userID, String userPassword, String userName, int userAge, String userGender,
+			String userEmail) {
+		super();
+		this.userID = userID;
+		this.userPassword = userPassword;
+		this.userName = userName;
+		this.userAge = userAge;
+		this.userGender = userGender;
+		this.userEmail = userEmail;
+	}
 	public String getUserID() {
 		return userID;
 	}

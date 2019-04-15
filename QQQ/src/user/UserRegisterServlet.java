@@ -33,26 +33,26 @@ public class UserRegisterServlet extends HttpServlet{
 		|| userEmail == null || userEmail.equals("") ) {
 			request.getSession().setAttribute("messageType", "오류 메시지");
 			request.getSession().setAttribute("messageContent", "모든 내용을 입력하세요.");
-			response.sendRedirect("/QQQ/signUp.jsp");
+			response.sendRedirect("/QQQ/sign/signUp.jsp");
 			return;
 		}
 		if(!userPassword1.equals(userPassword2)) {
 			request.getSession().setAttribute("messageType", "오류 메시지");
 			request.getSession().setAttribute("messageContent", "모든 내용을 입력하세요.");
-			response.sendRedirect("/QQQ/signUp.jsp");
+			response.sendRedirect("/QQQ/sign/signUp.jsp");
 			return;
 		}
 		int result = new userDAO().register(userID, userPassword1, userName, userAge, userGender, userEmail );
 		if(result == 1) {
 			request.getSession().setAttribute("messageType", "회원가입");
 			request.getSession().setAttribute("messageContent", "축하합니다.");
-			response.sendRedirect("/QQQ/signUp.jsp");
+			response.sendRedirect("/QQQ/sign/insertOK.jsp");
 			return;
 		}
 		if(result != 1) {
 			request.getSession().setAttribute("messageType", "오류 메시지");
 			request.getSession().setAttribute("messageContent", "이미 존재하는 회원입니다.");
-			response.sendRedirect("/QQQ/signUp.jsp");
+			response.sendRedirect("/QQQ/sign/signUp.jsp");
 			return;
 		}
 	}
