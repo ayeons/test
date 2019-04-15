@@ -11,14 +11,19 @@
 <title>Insert title here</title>
 </head>
 <body>
+<img alt="ÀÌ¹ÌÁö" src="/QQQ/member/a?name=aa" width="300">
+
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
 <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 
 
 
-<form action="/QQQ/Test" method="post">
+<form action="/QQQ/NewFile1.jsp" method="post" enctype="multipart/form-data">
 	<input type="text" name="id">
+	<input type="submit">
+	<input type="file" name="file">
+	<input type="email">
 	<input type="submit">
 </form>
 

@@ -33,6 +33,18 @@
     <servlet-name>freeController</servlet-name>
     <url-pattern>/free/*</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>memberController</servlet-name>
+    <servlet-class>controller.MemberController</servlet-class>
+    <init-param>
+      <param-name>path</param-name>
+      <param-value>prob</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>memberController</servlet-name>
+    <url-pattern>/member/*</url-pattern>
+  </servlet-mapping>
   <resource-ref>
     <description>Oracle Datasource example</description>
     <res-ref-name>jdbc/myoracle</res-ref-name>

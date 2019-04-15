@@ -16,15 +16,15 @@
         <p>From  set together our divided own saw divided the form god <br class="d-none d-xl-block"> seas moveth you will fifth under replenish end</p>
         <ul class="hero-info d-none d-lg-block">
           <li>
-            <img src="/QQQ/img/banner/fas-service-icon.png" alt="">
+            <img src="/QQQ/resource/img/banner/fas-service-icon.png" alt="">
             <h4>Fast Service</h4>
           </li>
           <li>
-            <img src="/QQQ/img/banner/fresh-food-icon.png" alt="">
+            <img src="/QQQ/resource/img/banner/fresh-food-icon.png" alt="">
             <h4>Fresh Food</h4>
           </li>
           <li>
-            <img src="/QQQ/img/banner/support-icon.png" alt="">
+            <img src="/QQQ/resource/img/banner/support-icon.png" alt="">
             <h4>24/7 Support</h4>
           </li>
         </ul>
@@ -32,7 +32,7 @@
       <div class="hero-right">
         <div class="owl-carousel owl-theme w-100 hero-carousel">
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="/QQQ/img/banner/hero-banner-sm.png" alt="">
+            <img class="img-fluid" src="/QQQ/resource/img/banner/hero-banner-sm.png" alt="">
           </div>
         </div>
       </div>
