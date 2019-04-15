@@ -21,7 +21,7 @@ public class FreeDAO {
 		return Hold.dao;
 	}
 	public List<FreeDTO> freeList(int pageNum,int rows,int lastNum) {
-		System.out.println("dfdfd");
+		
 		Connection conn=null;
 		PreparedStatement pstmt=null;
 		ResultSet rs=null;
