@@ -21,6 +21,7 @@ public class UserController extends HttpServlet {
     }
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("MS949");
 		 String requestPath=request.getRequestURI().substring(request.getServletContext().getContextPath().length());
 		 System.out.println(requestPath);
 		 if(requestPath.equals("/user/updateOK")) {
@@ -31,7 +32,7 @@ public class UserController extends HttpServlet {
 		 if(requestPath.equals("/user/update")) {
 			 userDTO dto=new userDAO().serch(request.getParameter("userId"));
 			 request.setAttribute("dto", dto);
-			 request.getRequestDispatcher("/QQQ/sign/update.jsp");
+			 request.getRequestDispatcher("/sign/update.jsp").forward(request, response);;
 			 return;
 		 }
 		 if(requestPath.equals("/user/login")) {
@@ -64,7 +65,7 @@ public class UserController extends HttpServlet {
 				 
 				 response.sendRedirect("/QQQ/index.jsp");
 			 }else {
-				 request.setAttribute("loginMessage", "로그인성공");
+				 request.setAttribute("loginMessage", "로그인실패");
 				 
 				 request.getRequestDispatcher("/user/login").forward(request, response);;
 			 }

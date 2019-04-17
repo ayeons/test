@@ -8,11 +8,11 @@
 </head>
 <body>
 
-<%@include file="header.jsp" %>
+<%@include file="../header.jsp" %>
 <script>
 	$(document).ready(function(){
 		setTimeout(function(){
-			location.href="/QQQ/management_insert.jsp";
+			location.href="/QQQ/managementJ/management_insert.jsp";
 		},2000);
 	})
 </script>

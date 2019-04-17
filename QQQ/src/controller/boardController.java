@@ -11,9 +11,9 @@ import dao.BoardDAO;
 
 public class boardController extends HttpServlet{
 
-	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.setCharacterEncoding("utf-8");
 		int i=req.getRequestURI().indexOf("?");
 		String s=null;
 		if(i>=0) {
@@ -26,6 +26,10 @@ public class boardController extends HttpServlet{
 			boardList(req,resp);
 		}else if(s.equals("/board/write")) {
 			boardWrite(req,resp);
+		}else if(s.equals("/board/detail")) {
+			boardDetail(req, resp);
+		}else if(s.equals("/board/insert")) {
+			boardInsert(req, resp);
 		}
 	}
 
@@ -40,5 +44,11 @@ public class boardController extends HttpServlet{
 	}
 	private void boardWrite(HttpServletRequest req,HttpServletResponse resp) throws ServletException, IOException {
 		req.getRequestDispatcher("/boardWrite.jsp").forward(req,resp);
+	}
+	private void boardDetail(HttpServletRequest req,HttpServletResponse resp) throws ServletException, IOException {
+		req.getRequestDispatcher("/boardDetail.jsp").forward(req,resp);
+	}
+	private void boardInsert(HttpServletRequest req,HttpServletResponse resp) throws ServletException, IOException {
+		req.getRequestDispatcher("/board_insert.jsp").forward(req,resp);
 	}
 }

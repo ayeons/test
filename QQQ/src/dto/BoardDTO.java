@@ -2,9 +2,10 @@ package dto;
 
 public class BoardDTO {
 	private int id;
-	private String author;
+	private String writer;
 	private String title;
 	private String content;
+	private String mail;
 	
 	
 	public BoardDTO() {
@@ -12,20 +13,21 @@ public class BoardDTO {
 	}
 	
 	
-	public BoardDTO(int id, String author, String title) {
+	public BoardDTO(int id, String writer, String title) {
 		super();
 		this.id = id;
-		this.author = author;
+		this.writer = writer;
 		this.title = title;
 	}
 
 
-	public BoardDTO(int id, String author, String title, String content) {
+	public BoardDTO(int id, String writer, String title, String content, String mail) {
 		super();
 		this.id = id;
-		this.author = author;
+		this.writer = writer;
 		this.title = title;
 		this.content = content;
+		this.mail = mail;
 	}
 	public int getId() {
 		return id;
@@ -33,12 +35,16 @@ public class BoardDTO {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getAuthor() {
-		return author;
+	public String getWriter() {
+		return writer;
 	}
-	public void setAuthor(String author) {
-		this.author = author;
+
+
+	public void setWriter(String writer) {
+		this.writer = writer;
 	}
+
+
 	public String getTitle() {
 		return title;
 	}
@@ -52,11 +58,22 @@ public class BoardDTO {
 		this.content = content;
 	}
 
+	public String getMail() {
+		return mail;
+	}
+
+
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+
 
 	@Override
 	public String toString() {
-		return "BoardDTO [id=" + id + ", author=" + author + ", title=" + title + ", content=" + content + "]";
+		return "BoardDTO [id=" + id + ", writer=" + writer + ", title=" + title + ", content=" + content + ", mail="
+				+ mail + "]";
 	}
-	
+
+
 	
 }

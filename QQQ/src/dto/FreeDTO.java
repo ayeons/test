@@ -7,7 +7,8 @@ public class FreeDTO {
 	private int lev;
 	private String author;
 	private String content;
-	
+	private String subject;
+	private int reply;
 	
 	
 	
@@ -31,7 +32,12 @@ public class FreeDTO {
 
 
 
-	public FreeDTO(int idx, int refg, int seq, int lev, String author, String content) {
+	
+
+
+
+
+	public FreeDTO(int idx, int refg, int seq, int lev, String author, String content, String subject, int reply) {
 		super();
 		this.idx = idx;
 		this.refg = refg;
@@ -39,6 +45,8 @@ public class FreeDTO {
 		this.lev = lev;
 		this.author = author;
 		this.content = content;
+		this.subject = subject;
+		this.reply = reply;
 	}
 
 
@@ -77,10 +85,35 @@ public class FreeDTO {
 	public String getContent() {
 		return content;
 	}
+	
+
 	public void setContent(String content) {
 		this.content = content;
 	}
-	
+	public String getSubject() {
+		return subject;
+	}
+
+
+
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+
+
+
+	public int getReply() {
+		return reply;
+	}
+
+
+
+
+	public void setReply(int reply) {
+		this.reply = reply;
+	}
 	
 	
 

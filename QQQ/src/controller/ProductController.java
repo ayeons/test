@@ -100,9 +100,12 @@ public class ProductController extends HttpServlet{
 		ProductDTO dto=dao.productSearch(req.getParameter("id"));
 		System.out.println(list.size());
 		System.out.println(dto);
+	
 		if(dto==null)return;
 		
 		if(list.size()==0) {
+			
+			dto.setQuantity(1);
 			list.add(dto);
 		}
 		else {
@@ -115,8 +118,11 @@ public class ProductController extends HttpServlet{
 					count++;
 				}
 			}
-			if(count==0)
+			if(count==0) {
+				
+				dto.setQuantity(1);
 				list.add(dto);
+			}
 			
 		}
 		

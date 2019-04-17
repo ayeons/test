@@ -27,11 +27,13 @@
 					
 					<tr>
 						<td style="width: 110px;"><h5>이름</h5></td>
-						<td colspan="2"><input class="form-control" type="text" id="userName" name="userName" maxLength="20" value="${dto.getUserName}"></td>
+						<td colspan="2"><input class="form-control" type="text" id="userName" name="userName" maxLength="20" value="${dto.getUserName()}"></td>
 					</tr>
+					
+					
 					<tr>
 						<td style="width: 110px;"><h5>나이</h5></td>
-						<td colspan="2"><input class="form-control" type="text" id="userAge" name="userAge" maxLength="20"  value="${dto.getUserAge}"></td>
+						<td colspan="2"><input class="form-control" type="text" id="userAge" name="userAge" maxLength="20"  value="${dto.getUserAge()}"></td>
 					</tr>
 					<tr>
 						<td style="width: 110px;"><h5>성별</h5></td>
@@ -54,11 +56,11 @@
 					</tr>
 					<tr>
 						<td style="width: 110px;"><h5>이메일</h5></td>
-						<td colspan="2"><input class="form-control" type="email" id="userEmail" name="userEmail" maxLength="20"  value="${dto.getUserEmail}"></td>
+						<td colspan="2"><input class="form-control" type="email" id="userEmail" name="userEmail" maxLength="20"  value="${dto.getUserEmail()}"></td>
 					</tr>
 					<tr>
 						
-						<td style="text-align: Left" colspan="3"><h5 style="color: red;" id="passwordCheckMessage"></h5><input class="btn btn-primary pull-right" type="submit" value="회원가입"></td>
+						<td style="text-align: Left" colspan="3"><h5 style="color: red;" id="passwordCheckMessage"></h5><input class="btn btn-primary pull-right" type="submit" value="수정"></td>
 					</tr>
 				</tbody>
 			</table>

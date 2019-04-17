@@ -8,25 +8,23 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
 </head>
 <body>
-<%
-	
-MultipartRequest req=new MultipartRequest(request,"c:/ttt",80000,"EUC-KR",new DefaultFileRenamePolicy());
-Enumeration<?> e=req.getFileNames();
-String s=null;
-out.println(e.hasMoreElements());
-while(e.hasMoreElements()){
-	String sss=(String)e.nextElement();
-s=req.getOriginalFileName(sss);
-out.println(s);
+<script>
+$(function(){
+	$("div").each(function(a,b){
+			var df=$(b);
+		alert(df.css("color","red"));
+			alert(b);
+	});
+})
+</script>
+<div>
+textdwds
+</div>
+<div>
 
-String ss=req.getFilesystemName(sss);
-out.println(ss);
-	
-}
-
-%>
-fdfd
+</div>
 </body>
 </html>

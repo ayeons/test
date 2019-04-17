@@ -78,18 +78,19 @@ public class userDAO {
 	public int update(userDTO dto) {
 		Connection conn=null;
 		PreparedStatement pstmt=null;
+		int result=0;
 		try {
-			String sql="update user set userpassword=?,username=?,userage=?,usergender=?,useremail=? where userid=?";
+			String sql="update user set username=?,userage=?,usergender=?,useremail=? where userid=?";
 			
 			conn=MyDBConn.getConn();
 			pstmt=conn.prepareStatement(sql);
-			pstmt.setString(1, dto.getUserPassword());
-			pstmt.setString(2, dto.getUserName());
-			pstmt.setInt(3, dto.getUserAge());
-			pstmt.setString(4, dto.getUserGender());
-			pstmt.setString(5, dto.getUserEmail());
-			pstmt.setString(6, dto.getUserID());
 			
+			pstmt.setString(1, dto.getUserName());
+			pstmt.setInt(2, dto.getUserAge());
+			pstmt.setString(3, dto.getUserGender());
+			pstmt.setString(4, dto.getUserEmail());
+			pstmt.setString(5, dto.getUserID());
+			result=pstmt.executeUpdate();
 			
 		}catch(SQLException e) {
 			e.printStackTrace();
@@ -108,7 +109,7 @@ public class userDAO {
 				}
 		}
 		
-		return 0;
+		return result;
 		
 	}
 	public userDTO check(String id,String password) {

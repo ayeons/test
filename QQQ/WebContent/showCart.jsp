@@ -70,7 +70,7 @@
 	      <div class="row">
 	        <div class="col-lg-6">
 	          <div class="media align-items-center food-card">
-	            <img class="mr-3 mr-sm-4" src="${dto.getImageName()}" alt="">
+	            <img width="200" class="mr-3 mr-sm-4" src="/QQQ/resource/img/${dto.getImageName()}" alt="noimg">
 	            <div class="media-body">
 	              <div class="d-flex justify-content-between food-card-title">
 	                <h4><a href="detail?id=${dto.getProductId()}">${dto.getProductName()}</a></h4>

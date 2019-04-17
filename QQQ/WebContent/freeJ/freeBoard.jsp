@@ -40,18 +40,26 @@
 					
 					
 				$(item).each(function(){
-					var	tagTr=$("<tr></tr>");
+					var	tagTr=$("<tr>");
 					var lev=$(this).find("lev").text();
+					
+					
+					$(tagTr).append("<td onclick='d(this)'>"+$(this).find("idx").text());
+					$(tagTr).append("<td style='display:none'>"+$(this).find("refg").text());
+					$(tagTr).append("<td style='display:none'>"+$(this).find("lev").text());
+					var tag=$("<td>");
 					
 					for(var i=0;i<lev;i++){
 						
-						$(tagTr).append("<td onclick='d(this)' style='color:blue'>&nbsp;&nbsp;&nbsp;re</td>");
+						$(tag).append("<span style='color:blue'>&nbsp;&nbsp;&nbsp;re");
+						
 						
 					}
-					$(tagTr).append("<td style='display:none'>"+$(this).find("refg").text()+"</td>");
-					$(tagTr).append("<td style='display:none'>"+$(this).find("lev").text()+"</td>");
-					$(tagTr).append("<td>"+$(this).find("content").text()+"</td>");
-					$(tagTr).append("<td>"+$(this).find("author").text()+"</td>");
+					$(tag).append(": "+$(this).find("subject").text());
+					$(tagTr).append(tag);
+					
+					$(tagTr).append("<td>"+$(this).find("content").text());
+					$(tagTr).append("<td>"+$(this).find("author").text());
 					
 					$(t).parent().after(tagTr);
 				})
@@ -65,7 +73,7 @@
 <table class="table table-striped table-hover">
 		<tr>
 			<th>글번호</th>
-			
+			<th>제목</th>
 			<th>내용</th>
 			<th>글쓴이</th>
 			
@@ -76,6 +84,7 @@
 			<td title="false" onclick="d(this)">${dto.getIdx()}</td>
 			<td style="display:none">${dto.getRefg()}</td>
 			<td style="display:none">${dto.getLev()}</td>
+			<td>${dto.getSubject()}</td>
 			<td>${dto.getContent()}</td>
 			<td>${dto.getAuthor()}</td>
 			

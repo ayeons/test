@@ -17,6 +17,8 @@ public class CommandInsert implements Command{
 		}
 		String author=req.getParameter("author");
 		String content=req.getParameter("content");
+		String title=req.getParameter("title");
+		
 		DAO dao=DAO.getInstance();
 		String param=req.getParameter("idx");
 		int idx=0;
@@ -29,12 +31,12 @@ public class CommandInsert implements Command{
 		DTO dto=dao.serch(idx);
 		if(dto!=null) {
 			dao.seqSort(dto.getRefg(), dto.getSeq());
-			dao.insert(new DTO(nextval,dto.getRefg(),dto.getSeq()+1,dto.getLev()+1,author,content));
+			dao.insert(new DTO(nextval,dto.getRefg(),dto.getSeq()+1,dto.getLev()+1,author,content,title,0));
 			
 		}else {
 			
 			
-				dao.insert(new DTO(nextval,nextval,1,1,author,content));
+				dao.insert(new DTO(nextval,nextval,1,1,author,content,title,0));
 			
 			
 			

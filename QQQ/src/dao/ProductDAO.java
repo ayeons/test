@@ -85,7 +85,8 @@ public class ProductDAO {
 						rs.getString("productId"),
 						rs.getString("productName"),
 						rs.getInt("price"),
-						1
+						rs.getString("imageName"),
+						rs.getString("description")
 						);
 			}
 		}catch(SQLException e) {

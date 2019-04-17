@@ -50,8 +50,9 @@ public class FreeDAO {
 						rs.getInt("seq"),
 						rs.getInt("lev"),
 						rs.getString("author"),
-						rs.getString("content"));
-				
+						rs.getString("content"),
+						rs.getString("subject"),
+						rs.getInt("reply"));
 				list.add(dto);
 			}
 		}catch(SQLException e) {
@@ -107,8 +108,9 @@ public class FreeDAO {
 						rs.getInt("seq"),
 						rs.getInt("lev"),
 						rs.getString("author"),
-						rs.getString("content"));
-				
+						rs.getString("content"),
+						rs.getString("subject"),
+						rs.getInt("reply"));
 				list.add(dto);
 			}
 		} catch (SQLException e) {

@@ -15,7 +15,7 @@ public class CommandList implements Command{
 		if(tempPage!=null) {
 			pageNum=Integer.parseInt(tempPage);
 		}
-		List<DTO> list=dao.list(pageNum-1,null,null);
+		List<DTO> list=dao.list(pageNum-1,req.getParameter("opt"),req.getParameter("condition"));
 		req.setAttribute("list",list );
 		req.setAttribute("command", "newb.jsp");
 		int temp=dao.count();

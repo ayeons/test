@@ -16,9 +16,13 @@ public class ManagementService {
 	public int updateProduct(ProductDTO dto) {
 		ProductDAO dao=new ProductDAO();
 		int result=0;
-		if(dao.productSearch(dto.getProductId())==null)
+		ProductDTO temp=dao.productSearch(dto.getProductId());
+		if(temp==null)
 			result=-1;
 		else {
+			if(dto.getImageName()==null) {
+				dto.setImageName(temp.getImageName());
+			}
 			result= dao.productUpdate(dto);
 		}
 		return result;

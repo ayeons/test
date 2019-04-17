@@ -73,8 +73,13 @@ public class DAO {
 		try {
 			conn=DBCP.getConn();
 			if(opt!=null) {
-				sb.append("select * from newb order by refg,seq");
+				System.out.println(opt);
+				sb.append("select * from (select rownum r,n.* from (select * from newb where "+opt+"=? order by refg desc,seq) n)where r>? and r<=?");
 				pstmt=conn.prepareStatement(sb.toString());
+				pstmt.setString(1, condition);
+				pstmt.setInt(2,pageNum*10);
+				pstmt.setInt(3,pageNum*10+10);
+				
 			}else {
 				sb.append("select * from (select rownum r,n.* from (select * from newb order by refg desc,seq) n) where r>? and r<=?");
 				pstmt=conn.prepareStatement(sb.toString());
@@ -89,7 +94,9 @@ public class DAO {
 					int lev=rs.getInt("lev");
 					String author=rs.getString("author");
 					String content=rs.getString("content");
-					list.add(new DTO(idx,refg,seq,lev,author,content));
+					String title=rs.getString("title");
+					int views=rs.getInt("views");
+					list.add(new DTO(idx,refg,seq,lev,author,content,title,views));
 				}
 				
 			
@@ -135,7 +142,7 @@ public class DAO {
 		PreparedStatement pstmt=null;
 		int result=0;
 		try {
-			String sql="insert into newb values(?,?,?,?,?,?)";
+			String sql="insert into newb values(?,?,?,?,?,?,?,?)";
 			conn=DBCP.getConn();
 			pstmt=conn.prepareStatement(sql);
 			pstmt.setInt(1,dto.getIdx());
@@ -144,6 +151,8 @@ public class DAO {
 			pstmt.setInt(4,dto.getLev());
 			pstmt.setString(5,dto.getAuthor());
 			pstmt.setString(6,dto.getContent());
+			pstmt.setString(7,dto.getTitle());
+			pstmt.setInt(8,dto.getViews());
 			result=pstmt.executeUpdate();
 		}catch(SQLException e) {
 			e.printStackTrace();
@@ -224,7 +233,13 @@ public class DAO {
 				int refg=rs.getInt("refg");
 				int seq=rs.getInt("seq");
 				int lev=rs.getInt("lev");
-				dto=new DTO(idx,refg,seq,lev,null,null);
+				String content=rs.getString("content");
+				String author=rs.getString("author");
+				String title=rs.getString("title");
+				int views=rs.getInt("views");
+				dto=new DTO(idx,refg,seq,lev,author,content,title,views);
+				System.out.println(content);
+				System.out.println(author);
 				
 			}
 		}catch(SQLException e) {
@@ -321,5 +336,73 @@ public class DAO {
 		return result;
 	}
 	
+	public int update(DTO dto) {
+		Connection conn=null;
+		PreparedStatement pstmt=null;
+		int result=0;
+		try {
+			String sql="update newb set content=?,title=? where idx=?";
+			conn=DBCP.getConn();
+			pstmt=conn.prepareStatement(sql);
+			pstmt.setString(1,dto.getContent());
+			pstmt.setString(2,dto.getTitle());
+			pstmt.setInt(3, dto.getIdx());
+			result=pstmt.executeUpdate();
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}finally {
+			if(pstmt!=null)
+				try {
+					pstmt.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			if(conn!=null)
+				try {
+					conn.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		}
+		
+		return result;
+		
+	}
+	
+	public int upViews(int idx) {
+		Connection conn=null;
+		PreparedStatement pstmt=null;
+		int result=0;
+		try {
+			String sql="update newb set views=views+1 where idx=?";
+			conn=DBCP.getConn();
+			pstmt=conn.prepareStatement(sql);
+		
+			pstmt.setInt(1, idx);
+			result=pstmt.executeUpdate();
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}finally {
+			if(pstmt!=null)
+				try {
+					pstmt.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			if(conn!=null)
+				try {
+					conn.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		}
+		
+		return result;
+		
+	}
 	
 }

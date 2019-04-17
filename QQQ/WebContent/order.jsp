@@ -28,7 +28,7 @@
             <form class="search-form" action="/QQQ/orderProcess.jsp">
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Your Name">
+                  <input type="text" style="color:#FF00FF" class="form-control" placeholder="Your Name" value="${sessionScope.memDTO.getUserName()}">
                   <div class="input-group-append">
                     <span class="input-group-text"><i class="ti-user"></i></span>
                   </div>
@@ -36,7 +36,7 @@
               </div>
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Email Address">
+                  <input style="color:#FF00FF" type="text" class="form-control" placeholder="Email Address" value="${sessionScope.memDTO.getUserEmail()}">
                   <div class="input-group-append">
                     <span class="input-group-text"><i class="ti-email"></i></span>
                   </div>

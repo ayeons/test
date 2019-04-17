@@ -44,6 +44,10 @@ public class FreeServiceAjax implements FreeServiceable {
 				out.println(dto.getLev());
 				out.println("</lev>");
 				
+				out.println("<subject>");
+				out.println(dto.getSubject());
+				out.println("</subject>");
+				
 				out.println("</item>");
 			}
 			out.println("</page>");

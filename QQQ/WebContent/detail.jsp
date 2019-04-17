@@ -10,10 +10,11 @@
 </head>
 
 <body>
+
 <script>
 function d(){
 	$(".val").css("display","block");
-	$(".val").fadeOut(3000);
+	$(".val").fadeOut(2000);
 	
 	$.ajax({
 		
@@ -37,9 +38,9 @@ function d(){
 
 <div class="val"></div>
 <input id="hidden" type="hidden" value="${dto.getProductId()}">
-	<div class="col-lg-6">
+	<div class="col-lg-12">
           <div class="media align-items-center food-card">
-            <img class="mr-3 mr-sm-4" src="${dto.getImageName()}" alt="">
+            <img  class="mr-3 mr-sm-4" src="/QQQ/resource/img/${dto.getImageName()}" alt="">
             <div class="media-body">
               <div class="d-flex justify-content-between food-card-title">
                 <h4><a href="#">${dto.getProductName()}</a></h4>

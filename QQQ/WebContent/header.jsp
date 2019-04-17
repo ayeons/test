@@ -42,7 +42,7 @@
               <li class="nav-item"><a class="nav-link" href="/QQQ/index.jsp">Home</a></li> 
               <li class="nav-item"><a class="nav-link" href="#"></a></li> 
               <li class="nav-item"><a class="nav-link" href="/QQQ/product/list">Menu</a>
-              <li class="nav-item"><a class="nav-link" href="/QQQ/board/list">게시판</a>
+              <li class="nav-item"><a class="nav-link" href="/QQQ/newb/list.co?pageNum=1">게시판</a>
 
               <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -53,8 +53,12 @@
                 </ul>
 							</li>
               <li class="nav-item"><a class="nav-link" href="contact.html"></a></li>
-              <li class="nav-item active"> <a class="nav-link" href="/QQQ/product/showCart">장바구니</a></li>	
+              <li class="nav-item active"> <a class="nav-link" href="/QQQ/product/showCart">장바구니</a></li>
+              
               <li class="nav-item active"> <a class="nav-link" href="/QQQ/user/login" id="log">로그인</a></li>
+              
+          
+             
               <li class="nav-item active"> <a class="nav-link" href="/QQQ/user/sign">회원가입</a></li>
               <%@include file="memsession.jsp" %>	
             </ul>

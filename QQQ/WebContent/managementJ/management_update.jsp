@@ -8,12 +8,12 @@
 </head>
 <body>
 
-<%@include file="header.jsp" %>
+<%@include file="/header.jsp" %>
 
 <span class=""><a class="nav-link" href="<%=getServletContext().getContextPath()%>/management/list">관리자</a></span>
 <h3>수정페이지</h3>
 	<div class="col-lg-8">
-          <form class="form-contact contact_form" action="/QQQ/management/update_ok" method="post" id="contactForm" novalidate="novalidate">
+          <form class="form-contact contact_form" action="/QQQ/management/update_ok" method="post" enctype="multipart/form-data" id="contactForm" novalidate="novalidate">
             <div class="row">
               <div class="col-6">
                 <div class="form-group">
@@ -35,10 +35,11 @@
                 </div>
               </div>  
            	</div>
+          
            	<div class="row">
               <div class="col-6">
                 <div class="form-group">
-                    이미지<input class="form-control" name="imageName" id="name" type="text" value="${dto.getImageName()}">
+          	파일          <input class="form-control" name="file1" id="description" type="file" placeholder="Enter description">
                 </div>
               </div>  
            	</div>
@@ -49,6 +50,7 @@
                 </div>
               </div>  
            	</div>
+           	
            	
             <div class="form-group mt-3" style="display:inline-block">
               <button type="submit" class="button button-contactForm">수정</button>

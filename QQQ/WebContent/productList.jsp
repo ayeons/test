@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<span class=""><a class="nav-link" href="<%=getServletContext().getContextPath()%>/management/list">°ü¸®ÀÚ</a></span>
+
 <section class="hero-banner hero-banner-sm">
     <div class="hero-wrapper">
       <div class="hero-left">
@@ -41,7 +41,7 @@
       <div class="hero-right">
         <div class="owl-carousel owl-theme w-100 hero-carousel">
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="/QQQ/resource/img/banner/hero-banner-sm.png" alt="">
+            <img class="img-fluid" src="/QQQ/resource/img/blog/blog3.png" alt="">
           </div>
         </div>
       </div>
@@ -61,12 +61,12 @@
       </div>
 
 
-      <c:forEach var="list" items="${dtoList}" begin="0" end="${dtoList.size() }" step="1" varStatus="stat">
       <div class="row">
+      <c:forEach var="list" items="${dtoList}" begin="0" end="${dtoList.size() }" step="1" varStatus="stat">
       
         <div class="col-lg-6">
           <div class="media align-items-center food-card">
-            <img class="mr-3 mr-sm-4" src="${list.getImageName()}" alt="">
+            <img class="mr-3 mr-sm-4" width="50" src="/QQQ/resource/img/${list.getImageName()}" alt="noimage">
             <div class="media-body">
               <div class="d-flex justify-content-between food-card-title">
                 <h4><a href="detail?id=${list.getProductId()}">${list.getProductName()}</a></h4>
@@ -76,8 +76,8 @@
             </div>
           </div>
         </div>
-	  </div>
 	  </c:forEach> 
+	  </div>
 	</div>
 </section>
 	

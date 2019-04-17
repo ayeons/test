@@ -16,32 +16,56 @@
 		
 	})
 </script>
+		<form action="/QQQ/newb/list.co?pageNum=1" method="post">
+              <div class="input-group">
+              	
+                <input type="text" class="form-control col-lg-6"  name="condition" placeholder="Search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'search '">
+                
+                <div class="input-group-append">
+                  <button class="btn click-btn" type="submit">
+                    <i class="ti-arrow-right"></i>                    
+                  </button>
+                  	
+               		 제목	<input type="radio" value="title" name="opt" checked="checked">
+                  	글쓴이<input type="radio" value="author" name="opt">
+                  	
+                </div>
+              </div>
+              <div style="position: absolute; left: -5000px;">
+								<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+							</div>
+
+							<div class="info"></div>
+            </form>
 	<table class="table table-hover table-striped">
 		<thead>
 			<tr>
-				<td>d</td>
-				<td>d</td>
-				<td>d</td>
-				<td>d</td>
+				<th>글번호</th>
+				<th>제목</th>
+				<th>저자</th>
+				<th>내용</th>
+				<th>조회수</th>
+				
+				
 			</tr>
 			
 		</thead>	
 		<tbody>
 		<c:forEach var="dto" items="${list}" begin="0" end="${list.size()}" step="1">
 			<tr>
-				<td><a href="${pageContext.request.contextPath}/newb/detail.jsp?idx=${dto.getIdx()}">${dto.getIdx()}</a></td>
-				<td>
+				<td><a href="${pageContext.request.contextPath}/newb/listAt.co?idx=${dto.getIdx()}">${dto.getIdx()}</a></td>
+				<td><a href="${pageContext.request.contextPath}/newb/listAt.co?idx=${dto.getIdx()}">
 				<c:forEach begin="1" end="${dto.getLev()-1}">
 				&nbsp;<span style="color:#FF0088">re:</span>
 				</c:forEach>
 				
-					${dto.getContent()}
+					${dto.getTitle()}</a>
 				</td>
 				<td>${dto.getAuthor()}</td>
 				<td>${dto.getContent()}</td>
-				<td>${dto.getSeq() }</td>
-				<td>${dto.getLev() }</td>
-				<td>${dto.getRefg() }</td>
+				<td>${dto.getViews() }</td>
+				
+				
 			</tr>
 		</c:forEach>
 		</tbody>
@@ -64,6 +88,6 @@
 	</c:forEach>
 		<li><a href="list.co?pageNum=${param.pageNum+1}" class="page-link">다음</a></li>
 	</ul>
-	<div><a href="${pageContext.request.contextPath}/newb/insert.jsp">글쓰기</a></div>
+	<div><a class="button" href="${pageContext.request.contextPath}/newb/insert.jsp">글쓰기</a></div>
 </body>
 </html>

@@ -2,6 +2,7 @@ package newb;
 
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.ResourceBundle;
@@ -19,10 +20,6 @@ public class Controller extends HttpServlet {
     	loadPro("newb/resource");
     	
     }
-
-	
-
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doProcess(request,response);
 	}
@@ -52,6 +49,11 @@ public class Controller extends HttpServlet {
 	}
 	
 	public void doProcess(HttpServletRequest req,HttpServletResponse resp) {
+		try {
+			req.setCharacterEncoding("MS949");
+		} catch (UnsupportedEncodingException e1) {
+			e1.printStackTrace();
+		}
 		String uri=req.getRequestURI();
 		String path=uri.substring(uri.lastIndexOf("/"));
 		System.out.println(uri);

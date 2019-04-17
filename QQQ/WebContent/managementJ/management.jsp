@@ -1,3 +1,4 @@
+<%@page import="java.util.Enumeration"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -9,7 +10,7 @@
 
 <body>
 
-<%@include file="header.jsp" %>
+<%@include file="/header.jsp" %>
 <script>
 
 $(document).ready(function(){
@@ -27,7 +28,7 @@ function disappear(){
 <h3 id="result">영향받은row수 :${param.result}</h3>
 </c:if>
 
-<span class=""><a class="nav-link" href="<%=getServletContext().getContextPath()%>/product/list">일반</a></span>
+
 	<header class="header_area">
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -41,8 +42,9 @@ function disappear(){
                   aria-expanded="false">관리자메뉴</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item"><a class="nav-link" href="/QQQ/management/list">list</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/QQQ/management_insert.jsp">insert</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/QQQ/management/management_insert.jsp">insert</a></li>
                   <li class="nav-item"><a class="nav-link" href="#update">modify and delete</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/QQQ/management/out">관리자out</a></li>
                   
                 </ul>
 	  		 </li>
@@ -102,12 +104,12 @@ function disappear(){
       </div>
 
 
-      <c:forEach var="list" items="${dtoList}" begin="0" end="${dtoList.size() }" step="1" varStatus="stat">
       <div class="row">
+      <c:forEach var="list" items="${dtoList}" begin="0" end="${dtoList.size() }" step="1" varStatus="stat">
 
         <div class="col-lg-6">
           <div class="media align-items-center food-card">
-            <img class="mr-3 mr-sm-4" src="${list.getImageName()}" alt="">
+            <img class="mr-3 mr-sm-4" width="50" src="/QQQ/resource/img/${list.getImageName()}" alt="noimg">
             <div class="media-body">
               <div class="d-flex justify-content-between food-card-title">
                 <h4><a href="update?id=${list.getProductId()}">${list.getProductName()}</a></h4>
@@ -117,11 +119,11 @@ function disappear(){
             </div>
           </div>
         </div>
-	  </div>
 	  </c:forEach> 
+	  </div>
 	</div>
 </section>
 
-<%@include file="footer.jsp" %>
+<%@include file="/footer.jsp" %>
 </body>
 </html>
