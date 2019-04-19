@@ -10,25 +10,25 @@
 
 <%@include file="header.jsp" %>
 
-        <h1 class="hero-title">주문</h1>
+        <h1 class="hero-title" style="width: 200px; margin-left: 45%; margin-top: 5%;">주문</h1>
         <section class="bg-lightGray section-padding">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 col-xl-5 mb-4 mb-md-0">
           <div class="section-intro">
-            <h4 class="intro-title">Reservation</h4>
-            <h2 class="mb-3">Get experience from sneaky</h2>
+            <h4 class="intro-title">주문 처리 페이지</h4>
+            <h2 class="mb-3">주문해주셔서 감사합니다.</h2>
           </div>
-          <p>Him given and midst tree form seas she'd saw give evening one every make hath moveth you're appear female heaven had signs own days saw they're have let midst given him given and midst tree. Form seas she'd saw give evening</p>
+        
         </div>
         <div class="col-md-6 offset-xl-2 col-xl-5">
           <div class="search-wrapper">
-            <h3>Book A Table</h3>
+            <h3>주문 입력란</h3>
 
             <form class="search-form" action="/QQQ/orderProcess.jsp">
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" style="color:#FF00FF" class="form-control" placeholder="Your Name" value="${sessionScope.memDTO.getUserName()}">
+                  <input type="text" style="color:#FF00FF" class="form-control" placeholder="회원이름" value="${sessionScope.memDTO.getUserName()}">
                   <div class="input-group-append">
                     <span class="input-group-text"><i class="ti-user"></i></span>
                   </div>
@@ -36,7 +36,7 @@
               </div>
               <div class="form-group">
                 <div class="input-group">
-                  <input style="color:#FF00FF" type="text" class="form-control" placeholder="Email Address" value="${sessionScope.memDTO.getUserEmail()}">
+                  <input style="color:#FF00FF" type="text" class="form-control" placeholder="이메일 주소" value="${sessionScope.memDTO.getUserEmail()}">
                   <div class="input-group-append">
                     <span class="input-group-text"><i class="ti-email"></i></span>
                   </div>
@@ -44,7 +44,7 @@
               </div>
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Phone Number">
+                  <input type="text" class="form-control" placeholder="전화번호">
                   <div class="input-group-append">
                     <span class="input-group-text"><i class="ti-headphone-alt"></i></span>
                   </div>
@@ -52,22 +52,14 @@
               </div>
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Select Date">
+                  <input type="text" class="form-control" placeholder="날짜">
                   <div class="input-group-append">
                     <span class="input-group-text"><i class="ti-notepad"></i></span>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Select People">
-                  <div class="input-group-append">
-                    <span class="input-group-text"><i class="ti-layout-column3"></i></span>
-                  </div>
-                </div>
-              </div>
               <div class="form-group form-group-position">
-                <button class="button border-0" type="submit">Make Reservation</button>
+                <button class="button border-0" type="submit">주문하기</button>
               </div>
             </form>
           </div>

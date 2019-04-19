@@ -21,45 +21,22 @@
 <section class="hero-banner hero-banner-sm">
     <div class="hero-wrapper">
       <div class="hero-left">
-        <h1 class="hero-title">Food Menu</h1>
-        <p>From  set together our divided own saw divided the form god <br class="d-none d-xl-block"> seas moveth you will fifth under replenish end</p>
-        <ul class="hero-info d-none d-lg-block">
-          <li>
-            <img src="/QQQ/resource/img/banner/fas-service-icon.png" alt="">
-            <h4>Fast Service</h4>
-          </li>
-          <li>
-            <img src="/QQQ/resource/img/banner/fresh-food-icon.png" alt="">
-            <h4>Fresh Food</h4>
-          </li>
-          <li>
-            <img src="/QQQ/resource/img/banner/support-icon.png" alt="">
-            <h4>24/7 Support</h4>
-          </li>
-        </ul>
+        <h1 class="hero-title">음식 메뉴</h1>
+        <p>- 저희가 준비한 음식 메뉴입니다.</p>
       </div>
       <div class="hero-right">
         <div class="owl-carousel owl-theme w-100 hero-carousel">
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="/QQQ/resource/img/blog/blog3.png" alt="">
+            <img class="img-fluid" src="/QQQ/resource/img/blog/jumo.jpg" alt="" style="width: 650px; height: 500px;">
           </div>
         </div>
       </div>
-      <ul class="social-icons d-none d-lg-block">
-        <li><a href="#"><i class="ti-facebook"></i></a></li>
-        <li><a href="#"><i class="ti-twitter"></i></a></li>
-        <li><a href="#"><i class="ti-instagram"></i></a></li>
-      </ul>
     </div>
   </section>
 <section class="section-margin">
 
     <div class="container">
-      <div class="section-intro mb-75px">
-        <h4 class="intro-title">Food Menu</h4>
-        <h2>Delicious food</h2>
-      </div>
-
+     
 
       <div class="row">
       <c:forEach var="list" items="${dtoList}" begin="0" end="${dtoList.size() }" step="1" varStatus="stat">
@@ -72,7 +49,7 @@
                 <h4><a href="detail?id=${list.getProductId()}">${list.getProductName()}</a></h4>
                 <h3 class="price-tag">${list.getPrice()}</h3>
               </div>
-              <p>Whales and darkness moving form cattle</p>
+              <p>메뉴</p>
             </div>
           </div>
         </div>

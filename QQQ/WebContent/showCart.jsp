@@ -7,7 +7,7 @@
 <head>
 
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>장바구니</title>
 </head>
 <body>
 
@@ -18,45 +18,26 @@
       <div class="hero-left">
         <h1 class="hero-title">장바구니</h1>
         
-        <p>From  set together our divided own saw divided the form god <br class="d-none d-xl-block"> seas moveth you will fifth under replenish end</p>
-        <ul class="hero-info d-none d-lg-block">
-          <li>
-            <img src="/QQQ/resource/img/banner/fas-service-icon.png" alt="">
-            <h4>Fast Service</h4>
-          </li>
-          <li>
-            <img src="/QQQ/resource/img/banner/fresh-food-icon.png" alt="">
-            <h4>Fresh Food</h4>
-          </li>
-          <li>
-            <img src="/QQQ/resource/img/banner/support-icon.png" alt="">
-            <h4>24/7 Support</h4>
-          </li>
-        </ul>
+        
         <br>
         <div class="section-intro mb-75px">
-	        <h4 class="intro-title">!!</h4>
-	        <h3>Delicious food</h3>
+	        <h3>주문처리페이지</h3>
 	    </div>
       </div>
       <div class="hero-right">
         <div class="owl-carousel owl-theme w-100 hero-carousel">
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="/QQQ/resource/img/home/about-img1.png" alt="">
+            <img class="img-fluid" src="/QQQ/resource/img/home/33.jpg" alt="" style="width: 650px; height: 500px;">
           </div>
         </div>
       </div>
-      <ul class="social-icons d-none d-lg-block">
-        <li><a href="#"><i class="ti-facebook"></i></a></li>
-        <li><a href="#"><i class="ti-twitter"></i></a></li>
-        <li><a href="#"><i class="ti-instagram"></i></a></li>
-      </ul>
+      
       
     </div>
   </section>
 	<c:choose>
 	<c:when test="${list==null}">
-		<h1>장바구니에상품이없습니다</h1> 
+		
 	</c:when>
 	<c:otherwise>
 	<section class="section-margin">
@@ -78,7 +59,7 @@
 	                
 	              </div>
 	             	
-	              <p>Whales and darkness moving form cattle</p>
+	              
 	              
 	           	 </div>
 	         	 </div>
@@ -113,6 +94,6 @@
 	<a href="order">주문</a>
 </h2>
 </div>
-<%@include file="footer.jsp" %>
+
 </body>
 </html>

@@ -11,25 +11,30 @@
 <%@include file="../header.jsp" %>
 <body>
 ${loginMessage}
-<h3>로그인</h3>
-	<div class="col-lg-8">
+<h2 style="margin-left: 35%; margin-top: 5%;" >로그인</h2>
+	<div class="col-lg-8" style="margin-left: 35%;">
           <form class="form-contact contact_form" action="/QQQ/user/check" method="post" id="contactForm" novalidate="novalidate">
             <div class="row">
               <div class="col-6">
-                <div class="form-group">
-                    아이디<input style="background-color:lightpink" class="form-control" name="userId" id="name" type="text" placeholder="enter id"  >
+                <div class="form-group" >
+                    아이디<input style="background-color:lightpink" class="form-control" name="userId" id="name" type="text" placeholder="아이디를 입력해주세요" >
                 </div>
               </div>  
            	</div>
             <div class="row">
               <div class="col-6">
                 <div class="form-group">
-              비번<input class="form-control" name="userPassword" id="name" type="text" placeholder="Enter your password" >
+              비번<input class="form-control" name="userPassword" id="name" type="text" placeholder="비밀번호를 입력해주세요" >
                 </div>
               </div>  
            	</div>  
-          <button type="submit" class="button button-contactForm">확인</button>
+          <button type="submit" class="button button-contactForm" style="margin-left: 40%;">확인</button>
          </form>
+          <img  src="/QQQ/resource/img/home/55.JPG" alt ="fdfd" style="	
+          width: 610px;
+          height: 420px;
+          margin-top: 50px;
+          margin-bottom: 50px;">
 	</div>
 </body>
 
