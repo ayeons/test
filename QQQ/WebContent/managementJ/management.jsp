@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>관리자 페이지</title>
 </head>
 
 <body>
@@ -39,7 +39,7 @@ function disappear(){
             <ul class="nav navbar-nav menu_nav justify-content-end">
               <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">관리자메뉴</a>
+                  aria-expanded="false" >관리자메뉴</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item"><a class="nav-link" href="/QQQ/management/list">list</a></li>
                   <li class="nav-item"><a class="nav-link" href="/QQQ/management/management_insert.jsp">insert</a></li>
@@ -60,36 +60,19 @@ function disappear(){
 <section class="hero-banner hero-banner-sm">
     <div class="hero-wrapper">
       <div class="hero-left">
-        <h1 class="hero-title">Food Menu</h1>
-        <p>From  set together our divided own saw divided the form god <br class="d-none d-xl-block"> seas moveth you will fifth under replenish end</p>
-        <ul class="hero-info d-none d-lg-block">
-          <li>
-            <img src="/QQQ/resource/img/banner/fas-service-icon.png" alt="">
-            <h4>Fast Service</h4>
-          </li>
-          <li>
-            <img src="/QQQ/resource/img/banner/fresh-food-icon.png" alt="">
-            <h4>Fresh Food</h4>
-          </li>
-          <li>
-            <img src="/QQQ/resource/img/banner/support-icon.png" alt="">
-            <h4>24/7 Support</h4>
-          </li>
-        </ul>
+        <h1 class="hero-title">관리자 페이지</h1>
+        <p>여기서 내용을 수정하십시오. <br class="d-none d-xl-block"> 상품 등록 및 수정</p>
+       
       </div>
       <div class="hero-right">
         <div class="owl-carousel owl-theme w-100 hero-carousel">
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="/QQQ/resource/img/banner/hero-banner-sm.png" alt="">
+            <img class="img-fluid" src="/QQQ/resource/img/banner/99.jpg" alt="" style="width: 650px; height: 500px;">
           </div>
         </div>
       </div>
   
-      <ul class="social-icons d-none d-lg-block">
-        <li><a href="#"><i class="ti-facebook"></i></a></li>
-        <li><a href="#"><i class="ti-twitter"></i></a></li>
-        <li><a href="#"><i class="ti-instagram"></i></a></li>
-      </ul>
+      
        <a id="update"></a>   
     </div>
     
@@ -99,8 +82,7 @@ function disappear(){
 
     <div class="container">
       <div class="section-intro mb-75px">
-        <h4 class="intro-title">Food Menu</h4>
-        <h2>Delicious food</h2>
+        
       </div>
 
 
@@ -115,7 +97,7 @@ function disappear(){
                 <h4><a href="update?id=${list.getProductId()}">${list.getProductName()}</a></h4>
                 <h3 class="price-tag">${list.getPrice()}</h3>
               </div>
-              <p>Whales and darkness moving form cattle</p>
+              
             </div>
           </div>
         </div>
@@ -124,6 +106,6 @@ function disappear(){
 	</div>
 </section>
 
-<%@include file="/footer.jsp" %>
+
 </body>
 </html>
