@@ -1,0 +1,13 @@
+<root>
+<page>
+	<id>fdfd</id>
+	<pass>1234</pass>
+</page>
+<page2>
+	<id>fd</id>
+	<pass>12</pass>
+</page2>
+<page3>
+	<id>33</id>
+</page3>
+</root>
