@@ -44,14 +44,7 @@
               <li class="nav-item"><a class="nav-link" href="/QQQ/product/list">Menu</a>
               <li class="nav-item"><a class="nav-link" href="/QQQ/newb/list.co?pageNum=1">게시판</a>
 
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Blog</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="#">Blog Single</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
-                </ul>
-							</li>
+             
               <li class="nav-item"><a class="nav-link" href="contact.html"></a></li>
               <li class="nav-item active"> <a class="nav-link" href="/QQQ/product/showCart">장바구니</a></li>
               
