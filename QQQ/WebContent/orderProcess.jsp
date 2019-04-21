@@ -9,7 +9,7 @@
 <body>
 <%@include file="header.jsp" %>
 
-<img src="/QQQ/resource/img/banner/11.jpg" style="width: 500px; height: 400px; margin-bottom: 5%; margin-left: 40%; margin-top: 5%;">
+<img src="/QQQ/resource/img/home/55.JPG" style="width: 500px; height: 400px; margin-bottom: 5%; margin-left: 40%; margin-top: 5%;">
 
 
 <div class="section-intro mb-75px" style="margin-left: 40%;">

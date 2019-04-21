@@ -26,8 +26,9 @@
                     <i class="ti-arrow-right"></i>                    
                   </button>
                   	
-               		 제목	<input type="radio" value="title" name="opt" checked="checked">
-                  	글쓴이<input type="radio" value="author" name="opt">
+               		<select name="opt">
+               		<option value="title">제목<option value="author">글쓴이</option>
+               		</select>
                   	
                 </div>
               </div>
