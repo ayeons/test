@@ -17,7 +17,7 @@
         <div class="col-md-6 col-xl-5 mb-4 mb-md-0">
           <div class="section-intro">
             <h4 class="intro-title">주문 처리 페이지</h4>
-            <h2 class="mb-3">주문해주셔서 감사합니다.</h2>
+            <h2 class="mb-3">회원님의 정보를 입력해주세요.</h2>
           </div>
         
         </div>
@@ -47,14 +47,6 @@
                   <input type="text" class="form-control" placeholder="전화번호">
                   <div class="input-group-append">
                     <span class="input-group-text"><i class="ti-headphone-alt"></i></span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="날짜">
-                  <div class="input-group-append">
-                    <span class="input-group-text"><i class="ti-notepad"></i></span>
                   </div>
                 </div>
               </div>

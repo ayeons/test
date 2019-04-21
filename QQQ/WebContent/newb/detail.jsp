@@ -21,12 +21,12 @@
               <div class="col-sm-6">
               
                 <div class="form-group">
-                  <input  class="form-control" name="title" id="writer" value="${dto.getTitle()}" type="text" <c:if test="${sessionScope.manage==null}">style="background-color:lightGreen"  readonly</c:if>>
+                  <input  class="form-control" name="title" id="writer" value="${dto.getTitle()}" type="text" <c:if test="${sessionScope.manage==null}">style="background-color:lightPink"  readonly</c:if>>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-group">
-                    <textarea class="form-control w-100"  name="content"  id="content" cols="30" rows="9" <c:if test="${sessionScope.manage==null}">style="background-color:lightGreen" readonly</c:if>>${dto.getContent()}</textarea>
+                    <textarea class="form-control w-100"  name="content"  id="content" cols="30" rows="9" <c:if test="${sessionScope.manage==null}">style="background-color:lightPink" readonly</c:if>>${dto.getContent()}</textarea>
                 </div>
               </div>
               <div class="col-sm-6">

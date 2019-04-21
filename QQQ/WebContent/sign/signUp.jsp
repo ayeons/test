@@ -50,36 +50,36 @@
 			<table class="table table-bordered table-hover" style="text-align: center; border: 1px solid #dddddd">
 				<thead>
 					<tr>
-						<th colspan="3"><h4>회원 등록 양식</h4></th>
+						<th colspan="3"><h4 style="color: white;">회원 등록</h4></th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td style="width: 110px;"><h5>아이디</h5></td>
+						<td style="width: 110px;"><h6>아이디</h6></td>
 						<td><input class="form-control" type="text" id="userID" name="userID" maxLength="20" placeholder="아이디를 입력해주세요."></td>
 						<td style="width: 110px;"><button class="btn btn-primary" onclick="registerCheckFunction();" type="button">중복체크</button></td>
 					</tr>
 					<tr>
-						<td style="width: 110px;"><h5>비밀번호</h5></td>
+						<td style="width: 110px;"><h6>비밀번호</h6></td>
 						<td colspan="2"><input class="form-control" type="password" onkeyup="passwordCheckFunction();" id="userPassword1" name="userPassword1" maxLength="20" placeholder="비밀번호를 입력해주세요."></td>
 					</tr>
 					<tr>
-						<td style="width: 110px;"><h5>비밀번호 확인</h5></td>
+						<td style="width: 110px;"><h6>비밀번호 확인</h6></td>
 						<td colspan="2"><input class="form-control" type="password" onkeyup="passwordCheckFunction();" id="userPassword2" name="userPassword2" maxLength="20" placeholder="비밀번호를 입력해주세요."></td>
 					</tr>
 					<tr>
-						<td style="width: 110px;"><h5>이름</h5></td>
+						<td style="width: 110px;"><h6>이름</h6></td>
 						<td colspan="2"><input class="form-control" type="text" id="userName" name="userName" maxLength="20" placeholder="이름을 입력해주세요."></td>
 					</tr>
 					<tr>
-						<td style="width: 110px;"><h5>나이</h5></td>
+						<td style="width: 110px;"><h6>나이</h6></td>
 						<td colspan="2"><input class="form-control" type="text" id="userAge" name="userAge" maxLength="20" placeholder="나이를 입력해주세요."></td>
 					</tr>
 					<tr>
-						<td style="width: 110px;"><h5>성별</h5></td>
+						<td style="width: 110px;"><h6>성별</h6></td>
 						<td colspan="2">
 							<div class="form-group" style="text-align: center; margin: 0 auto;">
-								<div class="btn-group" data-toggle="buttons">
+								<div class="btn-group" data-toggle="buttons" style="margin-right: 90%;">
 									<label class="btn btn-primary active">
 										<input type="radio" name="userGender" autocomplete="off" value="남자" checked>남자 
 									</label>
@@ -92,12 +92,12 @@
 						</td>
 					</tr>
 					<tr>
-						<td style="width: 110px;"><h5>이메일</h5></td>
+						<td style="width: 110px;"><h6>이메일</h6></td>
 						<td colspan="2"><input class="form-control" type="email" id="userEmail" name="userEmail" maxLength="20" placeholder="이메일을 입력해주세요."></td>
 					</tr>
 					<tr>
 						
-						<td style="text-align: Left" colspan="3"><h5 style="color: red;" id="passwordCheckMessage"></h5><input class="btn btn-primary pull-right" type="submit" value="회원가입"></td>
+						<td style="text-align: Left" colspan="3"><h5 style="color: red;" id="passwordCheckMessage"></h5><input class="btn btn-primary active" type="submit" value="회원가입"></td>
 					</tr>
 				</tbody>
 			</table>
