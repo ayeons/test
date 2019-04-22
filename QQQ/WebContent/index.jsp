@@ -19,7 +19,7 @@
       <div class="hero-left">
         <h1 class="hero-title">가장 중요한 건<br>음식.</h1>
         <div class="d-sm-flex flex-wrap">
-          <a class="button button-hero button-shadow" href="#">자세히 보기</a>
+          <a class="button button-hero button-shadow" href="http://hyunsoolim.com/eco-friendly/importance-of-food/">자세히 보기</a>
           <a class="hero-banner__video" href="http://www.youtube.com/watch?v=0O2aH4XLbto">동영상 보기</a>          
         </div>
         <ul class="hero-info d-none d-lg-block">
@@ -76,7 +76,7 @@
             <h2>좋은 음식으로 말합니다.</h2>
           </div>
           <p>화려하고 복잡한 음식은 필요없다. 다만 신선한 좋은 재료로 요리하라.</p>
-          <a class="button button-shadow mt-2 mt-lg-4" href="#">자세히 보기</a>
+          <a class="button button-shadow mt-2 mt-lg-4" href="http://hyunsoolim.com/eco-friendly/importance-of-food/">자세히 보기</a>
         </div>
       </div>
     </div>
