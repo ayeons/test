@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -77,8 +78,13 @@ public class ProductController extends HttpServlet{
 	public void productList(HttpServletRequest req,HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("methodproductList");
 		List<ProductDTO> list=new ProductDAO().getList();
+		for(ProductDTO dto:list) {
+			String s=URLEncoder.encode(dto.getProductId(),"UTF-8");
+			dto.setProductId(s);
+		}
 		req.setAttribute("dtoList", list);
 		
+
 		
 		RequestDispatcher rd=req.getRequestDispatcher("/productList.jsp");
 		
@@ -141,10 +147,10 @@ public class ProductController extends HttpServlet{
 		
 	}
 	private void detail(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("detail");
+		
 		ProductDAO dao=new ProductDAO();
 		String id=req.getParameter("id");
-		
+		System.out.println(id);
 		ProductDTO dto=dao.productSearch(id);
 		req.setAttribute("dto", dto);
 		req.getRequestDispatcher("/detail.jsp").forward(req, resp);

@@ -1,3 +1,4 @@
+<%@page import="java.net.URLEncoder"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
@@ -46,6 +47,7 @@
             <img class="mr-3 mr-sm-4" width="50" src="/QQQ/resource/img/${list.getImageName()}" alt="noimage">
             <div class="media-body">
               <div class="d-flex justify-content-between food-card-title">
+              
                 <h4><a href="detail?id=${list.getProductId()}">${list.getProductName()}</a></h4>
                 <h3 class="price-tag">${list.getPrice()}</h3>
               </div>
