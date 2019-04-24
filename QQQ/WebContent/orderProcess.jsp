@@ -8,10 +8,15 @@
 </head>
 <body>
 <%@include file="header.jsp" %>
-<div class="section-intro mb-75px">
+
+<img src="/QQQ/resource/img/home/55.JPG" style="width: 500px; height: 400px; margin-bottom: 5%; margin-left: 40%; margin-top: 5%;">
+
+
+<div class="section-intro mb-75px" style="margin-left: 40%;">
         <h4 class="intro-title">주문 처리 완료</h4>
-        <h2>Fresh taste and great price</h2>
+        <h2>주문해주셔서 감사합니다!</h2>
 </div>
+
 
 <script>
 	window.onload=function(){

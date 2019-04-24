@@ -5,8 +5,7 @@
 	font-family: 'Nanum Gothic';
 }
 thead th{
-	background-color: #006DCC;
-	color: white;
+	background-color: rebeccapurple;
 	text-align: center;
 }
 tr td:first-child,
@@ -25,7 +24,8 @@ h5{
 	font-size: 15px;
 }
 h4{
-	font-family : 'Noto Sans KR';
+	
+	color: white;
 }
 h3 {
 	font-family: 'Hanna';

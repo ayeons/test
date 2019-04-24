@@ -17,9 +17,9 @@
   <section class="hero-banner">
     <div class="hero-wrapper">
       <div class="hero-left">
-        <h1 class="hero-title">가장 중요한 것은 <br>음식입니다.</h1>
+        <h1 class="hero-title">가장 중요한 건<br>음식.</h1>
         <div class="d-sm-flex flex-wrap">
-          <a class="button button-hero button-shadow" href="#">자세히 보기</a>
+          <a class="button button-hero button-shadow" href="http://hyunsoolim.com/eco-friendly/importance-of-food/">자세히 보기</a>
           <a class="hero-banner__video" href="http://www.youtube.com/watch?v=0O2aH4XLbto">동영상 보기</a>          
         </div>
         <ul class="hero-info d-none d-lg-block">
@@ -40,16 +40,16 @@
       <div class="hero-right">
         <div class="owl-carousel owl-theme hero-carousel">
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="resource/img/banner/11.jpg" alt="">
+            <img class="img-fluid" src="resource/img/banner/11.jpg" alt="" style="height: 450px;">
           </div>
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="resource/img/banner/22.jpg" alt="">
+            <img class="img-fluid" src="resource/img/banner/22.jpg" alt="" style="height: 450px;">
           </div>
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="resource/img/banner/hero-banner1.png" alt="" style="height: 541px;">
+            <img class="img-fluid" src="resource/img/banner/hero-banner1.png" alt="" style="height: 450px;">
           </div>
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="resource/img/banner/hero-banner2.png" alt="" style="height: 541px;">
+            <img class="img-fluid" src="resource/img/banner/hero-banner2.png" alt="" style="height: 450px;">
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@
             <h2>좋은 음식으로 말합니다.</h2>
           </div>
           <p>화려하고 복잡한 음식은 필요없다. 다만 신선한 좋은 재료로 요리하라.</p>
-          <a class="button button-shadow mt-2 mt-lg-4" href="#">자세히 보기</a>
+          <a class="button button-shadow mt-2 mt-lg-4" href="http://hyunsoolim.com/eco-friendly/importance-of-food/">자세히 보기</a>
         </div>
       </div>
     </div>
@@ -97,7 +97,7 @@
         <div class="featured-item">
           <img class="card-img rounded-0" src="resource/img/home/featured1.png" alt="">
           <div class="item-body">
-            <a href="#">
+            <a href="/QQQ/productList.jsp">
               <h3>이탈리안 피자</h3>
             </a>
             <p>옆으로 넘겨보세요</p>
@@ -116,7 +116,7 @@
         <div class="featured-item">
           <img class="card-img rounded-0" src="resource/img/home/featured2.png" alt="">
           <div class="item-body">
-            <a href="#">
+            <a href="/QQQ/productList.jsp">
               <h3>Patatas Bravas</h3>
             </a>
             <p>옆으로 넘겨보세요</p>
@@ -135,7 +135,7 @@
         <div class="featured-item">
           <img class="card-img rounded-0" src="resource/img/home/featured3.png" alt="">
           <div class="item-body">
-            <a href="#">
+            <a href="/QQQ/productList.jsp">
               <h3>Pulled Sandwich</h3>
             </a>
             <p>옆으로 넘겨보세요</p>
@@ -154,7 +154,7 @@
         <div class="featured-item">
           <img class="card-img rounded-0" src="resource/img/home/featured1.png" alt="">
           <div class="item-body">
-            <a href="#">
+            <a href="/QQQ/productList.jsp">
               <h3>Mountain Mike Pizza</h3>
             </a>
             <p>옆으로 넘겨보세요</p>
@@ -186,7 +186,7 @@
           <div class="offer-card offer-card-position">
             <h3>이탈리안 피자 세일!</h3>
             <h2>50% OFF</h2>
-            <a class="button" href="#">자세히 보기</a>
+            <a class="button" href="/QQQ/productList.jsp">자세히 보기</a>
           </div>
         </div>
       </div>

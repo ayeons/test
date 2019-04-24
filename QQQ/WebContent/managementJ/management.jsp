@@ -38,8 +38,8 @@ function disappear(){
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav justify-content-end">
               <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false" >관리자메뉴</a>
+                <a href="#" class="button button-hero button-shadow" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false" style="margin-bottom: 30px;">관리자메뉴</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item"><a class="nav-link" href="/QQQ/management/list">list</a></li>
                   <li class="nav-item"><a class="nav-link" href="/QQQ/management/management_insert.jsp">insert</a></li>
@@ -67,7 +67,7 @@ function disappear(){
       <div class="hero-right">
         <div class="owl-carousel owl-theme w-100 hero-carousel">
           <div class="hero-carousel-item">
-            <img class="img-fluid" src="/QQQ/resource/img/banner/99.jpg" alt="" style="width: 650px; height: 500px;">
+            <img class="img-fluid" src="/QQQ/resource/img/banner/99.jpg" alt="" style="width: 600px; height: 500px;">
           </div>
         </div>
       </div>

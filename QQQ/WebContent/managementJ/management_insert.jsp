@@ -28,47 +28,47 @@
 
 
 
-	<h3>상품등록</h3>
+	<h3 style="margin-left: 40%;">상품등록</h3>
 	<div class="col-lg-8">
           <form name="form1" class="form-contact contact_form" action="/QQQ/management/insert" method="post" enctype="multipart/form-data" id="contactForm" novalidate="novalidate" onsubmit="return vali()" >
             <div class="row">
-              <div class="col-6">
+              <div class="col-6" style="margin-left: 40%;">
                 <div class="form-group">
-                    <input class="form-control" name="productId" id="id" type="text" placeholder="Enter product id">
+                    <input class="form-control" name="productId" id="id" type="text" placeholder="아이디를 입력해주세요">
                 </div>
               </div>  
            	</div>
             <div class="row">
-              <div class="col-6">
+              <div class="col-6" style="margin-left: 40%;">
                 <div class="form-group">
-                    <input class="form-control" name="productName" id="name" type="text" placeholder="Enter product name">
+                    <input class="form-control" name="productName" id="name" type="text" placeholder="이름을 입력해주세요">
                 </div>
               </div>  
            	</div>  
             <div class="row">
-              <div class="col-6">
+              <div class="col-6" style="margin-left: 40%;">
                 <div class="form-group">
-                    <input class="form-control" name="price" id="price" type="text" placeholder="Enter price">
+                    <input class="form-control" name="price" id="price" type="text" placeholder="가격을 입력해주세요">
                 </div>
               </div>  
            	</div>
            	
            	<div class="row">
-              <div class="col-6">
+              <div class="col-6" style="margin-left: 40%;">
                 <div class="form-group">
-                    <input class="form-control" name="file1" id="description" type="file" placeholder="Enter description">
+                    <input class="form-control" name="file1" id="description" type="file" placeholder="설명을 입력해주세요">
                 </div>
               </div>  
            	</div>
            	<div class="row">
-              <div class="col-6">
+              <div class="col-6" style="margin-left: 40%;">
                 <div class="form-group">
-                    <input class="form-control" name="description" id="description" type="text" placeholder="Enter description">
+                    <input class="form-control" name="description" id="description" type="text" placeholder="설명을 입력해주세요">
                 </div>
               </div>  
            	</div>
            	
-            <div class="form-group mt-3">
+            <div class="form-group mt-3" style="margin-left: 45%;">
               <button type="submit" class="button button-contactForm" >등록</button>
             </div>
             
