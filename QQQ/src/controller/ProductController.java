@@ -1,6 +1,8 @@
 package controller;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.net.URLEncoder;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -19,10 +21,17 @@ import dto.ProductDTO;
 import util.DBConn;
 
 public class ProductController extends HttpServlet{
-
+	static {
+		System.out.println("static");
+	}
+	
+    public ProductController(){
+		System.out.println("proconinit");
+		
+	}
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("post");
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("po");
 		doGet(req,resp);
 	}
 
@@ -30,6 +39,7 @@ public class ProductController extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		 System.out.println(req.getRequestURI());
 			int i=req.getRequestURI().indexOf("?");
+			
 			String s=null;
 			if(!(i<0))s=req.getRequestURI().substring(req.getContextPath().length(),req.getRequestURI().indexOf("?"));
 			
@@ -77,6 +87,7 @@ public class ProductController extends HttpServlet{
 	}
 	public void productList(HttpServletRequest req,HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("methodproductList");
+		 
 		List<ProductDTO> list=new ProductDAO().getList();
 		for(ProductDTO dto:list) {
 			String s=URLEncoder.encode(dto.getProductId(),"UTF-8");
@@ -84,7 +95,7 @@ public class ProductController extends HttpServlet{
 		}
 		req.setAttribute("dtoList", list);
 		
-
+		
 		
 		RequestDispatcher rd=req.getRequestDispatcher("/productList.jsp");
 		
@@ -179,6 +190,7 @@ public class ProductController extends HttpServlet{
 		addressCoo.setMaxAge(60*5);
 		resp.addCookie(nameCoo);
 		resp.addCookie(addressCoo);
+		req.getSession().removeAttribute("shoppingList");
 		req.getRequestDispatcher("/orderProcess.jsp").forward(req, resp);
 		
 	}

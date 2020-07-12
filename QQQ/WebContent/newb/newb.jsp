@@ -90,5 +90,8 @@
 		<li><a href="list.co?pageNum=${param.pageNum+1}" class="page-link">다음</a></li>
 	</ul>
 	<div><a class="button" href="${pageContext.request.contextPath}/newb/insert.jsp" style="margin-top: 20px;">글쓰기</a></div>
+	
+	
+	<br><br>
 </body>
 </html>

@@ -1,7 +1,6 @@
 package user;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -19,9 +18,9 @@ public class userDAO {
 		Connection conn=null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		String SQL = " select * from user where userID = ? ";
+		String SQL = " select * from uuser where userID = ? ";
 		try {
-			conn=MyDBConn.getConn();
+			conn=DBCP.getConn();
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, userID);
 			rs = pstmt.executeQuery();
@@ -49,9 +48,9 @@ public class userDAO {
 			Connection conn=null;
 			PreparedStatement pstmt = null;
 			
-			String SQL = "insert into user values(?, ?, ?, ?, ?, ?)";
+			String SQL = "insert into uuser values(?, ?, ?, ?, ?, ?)";
 			try {
-				conn=MyDBConn.getConn();
+				conn=DBCP.getConn();
 				pstmt = conn.prepareStatement(SQL);
 				pstmt.setString(1, usersID);
 				pstmt.setString(2, userPassword);
@@ -80,9 +79,9 @@ public class userDAO {
 		PreparedStatement pstmt=null;
 		int result=0;
 		try {
-			String sql="update user set username=?,userage=?,usergender=?,useremail=? where userid=?";
+			String sql="update uuser set username=?,userage=?,usergender=?,useremail=? where userid=?";
 			
-			conn=MyDBConn.getConn();
+			conn=DBCP.getConn();
 			pstmt=conn.prepareStatement(sql);
 			
 			pstmt.setString(1, dto.getUserName());
@@ -117,8 +116,8 @@ public class userDAO {
 		PreparedStatement pstmt=null;
 		ResultSet rs=null;
 		try {
-			String sql="select * from user where userid=? and userpassword=?";
-			conn=MyDBConn.getConn();
+			String sql="select * from uuser where userid=? and userpassword=?";
+			conn=DBCP.getConn();
 			pstmt=conn.prepareStatement(sql);
 			pstmt.setString(1, id);
 			pstmt.setString(2, password);
@@ -158,10 +157,10 @@ public class userDAO {
 		
 	}
 	public userDTO serch(String id) {
-		String sql="select * from user where userid=?";
+		String sql="select * from uuser where userid=?";
 		ResultSet rs=null;
 		userDTO dto=null;
-		try(Connection conn=MyDBConn.getConn(); PreparedStatement pstmt=conn.prepareStatement(sql)){
+		try(Connection conn=DBCP.getConn(); PreparedStatement pstmt=conn.prepareStatement(sql)){
 			pstmt.setString(1, id);
 			rs=pstmt.executeQuery();
 			if(rs.next()) {

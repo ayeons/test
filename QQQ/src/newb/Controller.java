@@ -63,6 +63,7 @@ public class Controller extends HttpServlet {
 			System.out.println("잘못된요청");
 			return;
 		}
+		
 		com.action(req, resp);
 		String forwardPath=(String) req.getAttribute("command");
 		if(req.getAttribute("send")!=null) {

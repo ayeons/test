@@ -49,8 +49,11 @@
               <li class="nav-item active"> <a class="nav-link" href="/QQQ/product/showCart">장바구니</a></li>
               
               <li class="nav-item active"> <a class="nav-link" href="/QQQ/user/login" id="log">로그인</a></li>
+              <li class="nav-item active"> <a class="nav-link" href="/QQQ/kakao2/login" id="logKakao2">카카오2</a></li>
+              <li class="nav-item active"> <a class="nav-link" href="/QQQ/kakao/login" id="logKakao">카카오로그인</a></li>
+              <li class="nav-item active"> <a class="nav-link" href="/QQQ/naver/login" id="logNaver">네이버로그인</a></li>
               
-          
+          		
              
               <li class="nav-item active"> <a class="nav-link" href="/QQQ/user/sign">회원가입</a></li>
               <%@include file="memsession.jsp" %>	

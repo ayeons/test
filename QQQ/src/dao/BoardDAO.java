@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dto.BoardDTO;
-import util.MyDBConn;
+import util.DBCP;
 
 public class BoardDAO {
 	
-	public Connection conn=MyDBConn.getConn();
+	public Connection conn=DBCP.getConn();
 	public PreparedStatement pstmt=null;
 	public ResultSet rs=null;
 	

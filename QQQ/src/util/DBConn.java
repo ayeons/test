@@ -12,7 +12,7 @@ public class DBConn {
 			try {
 				Class.forName("oracle.jdbc.driver.OracleDriver");
 				System.out.println("driverload");
-				conn=DriverManager.getConnection("jdbc:oracle:thin:@192.168.10.50:1521:orcl","test","test");
+				conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:testdb","ayeon","1111");
 			} catch (ClassNotFoundException | SQLException e) {
 				e.printStackTrace();
 			}

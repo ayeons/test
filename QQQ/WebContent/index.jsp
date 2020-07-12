@@ -12,6 +12,8 @@
 
 <%@include file="header.jsp" %>
 
+
+
 <span class=""><a class="nav-link" href="<%=getServletContext().getContextPath()%>/management/list" style="width: 132px; margin-left: 20%; text-shadow: black; ">관리자 로그인</a></span>
   <!--================Hero Banner Section start =================-->
   <section class="hero-banner">

@@ -2,9 +2,9 @@
     xmlns="http://apache.org/xml/xmlns/jakarta/commons/jocl">
  	
  	  <object class="org.apache.commons.dbcp.DriverManagerConnectionFactory">
-        <string value="jdbc:oracle:thin:@localhost:1521:orcl" />
-        <string value="test" />
-        <string value="test" />
+        <string value="jdbc:oracle:thin:@localhost:1521:testdb" />
+        <string value="ayeon" />
+        <string value="1111" />
       </object>
 
       <object class="org.apache.commons.pool.impl.GenericObjectPool">

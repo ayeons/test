@@ -25,7 +25,7 @@
           <div class="search-wrapper">
             <h3>주문 입력란</h3>
 
-            <form class="search-form" action="/QQQ/orderProcess.jsp">
+            <form class="search-form" action="/QQQ/product/orderProcess">
               <div class="form-group">
                 <div class="input-group">
                   <input type="text" style="color:#FF00FF" class="form-control" placeholder="회원이름" value="${sessionScope.memDTO.getUserName()}">
